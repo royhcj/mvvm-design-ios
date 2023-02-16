@@ -12,6 +12,7 @@ target 'CleanArcDesign' do
   
   # Networking
   pod 'IORequestable'
+  pod 'Kingfisher'
 
   # Layout
   pod 'SnapKit'

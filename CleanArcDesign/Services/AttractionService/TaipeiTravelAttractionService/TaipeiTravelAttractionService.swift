@@ -7,13 +7,13 @@
 
 import Foundation
 
-class TaipeiTravelAttractionService: AttractionService {
+public class TaipeiTravelAttractionService: AttractionService {
     static let shared = TaipeiTravelAttractionService()
     
     private init() {
     }
     
-    func fetchAttractions(pageNumber: Int, completion: @escaping (Result<[Attraction], Error>) -> Void) {
+    public func fetchAttractions(pageNumber: Int, completion: @escaping (Result<[Attraction], Error>) -> Void) {
         
         TaipeiTravelAPI.FetchAttractions(.init(page: pageNumber))
             .execute { result in

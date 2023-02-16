@@ -25,7 +25,7 @@ extension Attraction {
             openTimeText: data.openTime,
             address: data.address,
             coordinate: Coordinate(latitude: data.nlat,
-                                   longitude: data.elon),
+                                   longitude: data.elong),
             images: data.images.map {
                         ImageResource(data: $0)
                     }.compactMap { $0 } )

@@ -31,6 +31,13 @@
 		B03F6CAA299E7ECD007D663A /* AttractionsViewController+Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA9299E7ECD007D663A /* AttractionsViewController+Routes.swift */; };
 		B03F6CAC299E85AA007D663A /* Stored.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CAB299E85AA007D663A /* Stored.swift */; };
 		B03F6CAF299E8AE1007D663A /* AttractionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CAE299E8AE1007D663A /* AttractionCell.swift */; };
+		B03F6CB1299E8E9B007D663A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CB0299E8E9B007D663A /* MainViewController.swift */; };
+		B03F6CB3299E908E007D663A /* RootViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CB2299E908E007D663A /* RootViewModelProtocol.swift */; };
+		B03F6CB5299E9095007D663A /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CB4299E9095007D663A /* RootViewModel.swift */; };
+		B03F6CB7299E909C007D663A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CB6299E909C007D663A /* RootViewController.swift */; };
+		B03F6CB9299E90A5007D663A /* RootViewController+Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CB8299E90A5007D663A /* RootViewController+Routes.swift */; };
+		B03F6CBC299E99AB007D663A /* BasicNetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CBB299E99AB007D663A /* BasicNetworkLoggerPlugin.swift */; };
+		B03F6CBE299E9A9B007D663A /* RResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CBD299E9A9B007D663A /* RResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +69,13 @@
 		B03F6CA9299E7ECD007D663A /* AttractionsViewController+Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttractionsViewController+Routes.swift"; sourceTree = "<group>"; };
 		B03F6CAB299E85AA007D663A /* Stored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stored.swift; sourceTree = "<group>"; };
 		B03F6CAE299E8AE1007D663A /* AttractionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionCell.swift; sourceTree = "<group>"; };
+		B03F6CB0299E8E9B007D663A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B03F6CB2299E908E007D663A /* RootViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelProtocol.swift; sourceTree = "<group>"; };
+		B03F6CB4299E9095007D663A /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		B03F6CB6299E909C007D663A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		B03F6CB8299E90A5007D663A /* RootViewController+Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewController+Routes.swift"; sourceTree = "<group>"; };
+		B03F6CBB299E99AB007D663A /* BasicNetworkLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNetworkLoggerPlugin.swift; sourceTree = "<group>"; };
+		B03F6CBD299E9A9B007D663A /* RResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +146,7 @@
 			children = (
 				B03F6C5D299E04DF007D663A /* AppDelegate.swift */,
 				B03F6C5F299E04DF007D663A /* SceneDelegate.swift */,
+				B03F6CB0299E8E9B007D663A /* MainViewController.swift */,
 				B03F6C68299E04E1007D663A /* LaunchScreen.storyboard */,
 			);
 			path = Main;
@@ -234,6 +249,7 @@
 				B03F6CA1299E632B007D663A /* TaipeiTravelAPI+Attraction.swift */,
 				B03F6C9F299E61D0007D663A /* TaipeiTravelAPI+Models.swift */,
 				B03F6CA3299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift */,
+				B03F6CBD299E9A9B007D663A /* RResult.swift */,
 			);
 			path = TaipeiTravelAPI;
 			sourceTree = "<group>";
@@ -249,6 +265,7 @@
 		B03F6CA5299E73F9007D663A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				B03F6CBA299E9997007D663A /* Network */,
 				B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */,
 				B03F6CAB299E85AA007D663A /* Stored.swift */,
 			);
@@ -258,6 +275,10 @@
 		B03F6CA8299E7746007D663A /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				B03F6CB2299E908E007D663A /* RootViewModelProtocol.swift */,
+				B03F6CB4299E9095007D663A /* RootViewModel.swift */,
+				B03F6CB6299E909C007D663A /* RootViewController.swift */,
+				B03F6CB8299E90A5007D663A /* RootViewController+Routes.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -268,6 +289,14 @@
 				B03F6CAE299E8AE1007D663A /* AttractionCell.swift */,
 			);
 			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		B03F6CBA299E9997007D663A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6CBB299E99AB007D663A /* BasicNetworkLoggerPlugin.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,25 +414,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				B03F6CAC299E85AA007D663A /* Stored.swift in Sources */,
+				B03F6CB1299E8E9B007D663A /* MainViewController.swift in Sources */,
 				B03F6CA7299E7406007D663A /* UIViewController+Embed.swift in Sources */,
 				B03F6C7A299E1158007D663A /* Attraction.swift in Sources */,
 				B03F6C9E299E345D007D663A /* TaipeiTravelAPI.swift in Sources */,
 				B03F6C7E299E1226007D663A /* ImageResource.swift in Sources */,
 				B03F6C96299E30B1007D663A /* AttractionService.swift in Sources */,
+				B03F6CB3299E908E007D663A /* RootViewModelProtocol.swift in Sources */,
 				B03F6CA2299E632B007D663A /* TaipeiTravelAPI+Attraction.swift in Sources */,
 				B03F6CAF299E8AE1007D663A /* AttractionCell.swift in Sources */,
 				B03F6C78299E10D3007D663A /* FetchAttractionsUseCase.swift in Sources */,
 				B03F6C5E299E04DF007D663A /* AppDelegate.swift in Sources */,
+				B03F6CB9299E90A5007D663A /* RootViewController+Routes.swift in Sources */,
 				B03F6C60299E04DF007D663A /* SceneDelegate.swift in Sources */,
 				B03F6C99299E3147007D663A /* TaipeiTravelAttractionService.swift in Sources */,
+				B03F6CBC299E99AB007D663A /* BasicNetworkLoggerPlugin.swift in Sources */,
 				B03F6C84299E13FB007D663A /* AttractionsViewModelProtocol.swift in Sources */,
+				B03F6CB7299E909C007D663A /* RootViewController.swift in Sources */,
 				B03F6C7C299E11F0007D663A /* Coordinate.swift in Sources */,
 				B03F6CA0299E61D0007D663A /* TaipeiTravelAPI+Models.swift in Sources */,
 				B03F6CA4299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift in Sources */,
+				B03F6CBE299E9A9B007D663A /* RResult.swift in Sources */,
 				B03F6C82299E1342007D663A /* AttractionsViewController.swift in Sources */,
 				B03F6C94299E3017007D663A /* AppRouter.swift in Sources */,
 				B03F6CAA299E7ECD007D663A /* AttractionsViewController+Routes.swift in Sources */,
 				B03F6C8B299E19B8007D663A /* AttractionsViewModel.swift in Sources */,
+				B03F6CB5299E9095007D663A /* RootViewModel.swift in Sources */,
 				B03F6C90299E283E007D663A /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,8 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .systemBlue
+        let viewController = MainViewController()
         
         window.rootViewController = viewController
         

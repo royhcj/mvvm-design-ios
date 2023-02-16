@@ -7,11 +7,13 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 public class AttractionCell: UITableViewCell {
     
     public static let cellIdentifier: String = "AttractionCell"
     
+    private var photoImageView: UIImageView!
     private var titleLabel: UILabel!
     private var introductionLabel: UILabel!
     
@@ -27,19 +29,35 @@ public class AttractionCell: UITableViewCell {
     }
     
     private func createLayout() {
-        contentView.backgroundColor = .gray
+        contentView.backgroundColor = .white
         
         let vstack = UIStackView()
         vstack.axis = .vertical
         vstack.distribution = .equalSpacing
         contentView.addSubview(vstack)
         vstack.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.edges.equalToSuperview().inset(18)
         }
+        
+        photoImageView = UIImageView()
+        photoImageView.contentMode = .scaleAspectFill
+        photoImageView.snp.makeConstraints {
+            $0.height.equalTo(photoImageView.snp.width)
+        }
+        vstack.addArrangedSubview(photoImageView)
         
         titleLabel = UILabel()
         titleLabel.font = UIFont.systemFont(ofSize: 18)
         vstack.addArrangedSubview(titleLabel)
+        
+        vstack.addArrangedSubview({
+            let divider = UIView()
+            divider.backgroundColor = .gray
+            divider.snp.makeConstraints {
+                $0.height.equalTo(1)
+            }
+            return divider
+        }())
         
         introductionLabel = UILabel()
         introductionLabel.font = UIFont.systemFont(ofSize: 13)
@@ -49,6 +67,7 @@ public class AttractionCell: UITableViewCell {
     
     // MARK: - Configuring
     public func configure(with attraction: Attraction) {
+        photoImageView.kf.setImage(with: attraction.images.first?.url)
         titleLabel.text = attraction.name
         introductionLabel.text = attraction.introduction
     }

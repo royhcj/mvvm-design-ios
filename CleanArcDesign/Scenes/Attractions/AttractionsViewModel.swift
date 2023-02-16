@@ -35,6 +35,8 @@ public class AttractionsViewModel: AttractionsViewModelProtocol {
     // MARK: - Setup
     init(dependencies: AttractionsViewModelDependencies) {
         self.dependencies = dependencies
+        
+        fetchMoreAttractions(startsOver: true)
     }
     
     // MARK: - Dependencies

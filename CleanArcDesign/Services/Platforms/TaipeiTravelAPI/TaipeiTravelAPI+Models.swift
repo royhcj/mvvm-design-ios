@@ -24,7 +24,7 @@ extension TaipeiTravelAPI {
             var openTime: String
             var address: String
             var nlat: Double
-            var elon: Double
+            var elong: Double
             var images: [Image]
         }
     }

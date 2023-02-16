@@ -28,7 +28,7 @@ class AttractionsViewController: UIViewController,
          router: @escaping (RoutableViewController, Routes) -> Void) {
         self.viewModel = viewModel
         self.router = router
-        super.init()
+        super.init(nibName: nil, bundle: nil)
     
         createLayout()
         bindViewModel()
@@ -45,6 +45,7 @@ class AttractionsViewController: UIViewController,
         view.backgroundColor = .systemCyan
         
         tableView = UITableView()
+        tableView.separatorStyle = .none
         tableView.register(AttractionCell.self, forCellReuseIdentifier: AttractionCell.cellIdentifier)
         view.addSubview(tableView)
         tableView.snp.makeConstraints {

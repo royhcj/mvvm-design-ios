@@ -8,8 +8,8 @@
 import UIKit
 
 class AppCoordinator {
-    let dependencies: Dependencies
-    let router: Router
+    private let dependencies: Dependencies
+    private let router: Router
     
     init() {
         dependencies = Dependencies(attractionService: TaipeiTravelAttractionService.shared)
@@ -25,6 +25,24 @@ class AppCoordinator {
     func routeBehavior(for route: AppCoordinator.Routes, from source: UIViewController) -> RouteBehavior {
         
         switch route {
+        case .anyToRoot:
+            let viewModel = RootViewModel()
+            
+            let viewController = RootViewController(
+                viewModel: viewModel,
+                router: { [weak self] source, route in
+                    switch route {
+                    case .showAttractions:
+                        self?.route(.anyToAttractions, from: source)
+                    }
+                })
+            
+            let displayContext = UIDisplayContext(sourceViewController: source,
+                                                  method: .embed(over: nil))
+            
+            return .show(target: viewController,
+                         displayContext: displayContext)
+            
         case .anyToAttractions:
             let dependencies = AttractionsViewModelDependencies(
                 attractionService: dependencies.attractionService)
@@ -59,6 +77,7 @@ class AppCoordinator {
 
 extension AppCoordinator {
     enum Routes {
+        case anyToRoot
         case anyToAttractions
         case anyToAttraction(id: Int)
     }
