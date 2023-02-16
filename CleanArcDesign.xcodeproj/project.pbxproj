@@ -15,6 +15,11 @@
 		B03F6C7A299E1158007D663A /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C79299E1158007D663A /* Attraction.swift */; };
 		B03F6C7C299E11F0007D663A /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C7B299E11F0007D663A /* Coordinate.swift */; };
 		B03F6C7E299E1226007D663A /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C7D299E1226007D663A /* ImageResource.swift */; };
+		B03F6C82299E1342007D663A /* AttractionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C81299E1342007D663A /* AttractionsViewController.swift */; };
+		B03F6C84299E13FB007D663A /* AttractionsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */; };
+		B03F6C87299E1925007D663A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B03F6C86299E1925007D663A /* RxCocoa */; };
+		B03F6C89299E1925007D663A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B03F6C88299E1925007D663A /* RxSwift */; };
+		B03F6C8B299E19B8007D663A /* AttractionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,9 @@
 		B03F6C79299E1158007D663A /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 		B03F6C7B299E11F0007D663A /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		B03F6C7D299E1226007D663A /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
+		B03F6C81299E1342007D663A /* AttractionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewController.swift; sourceTree = "<group>"; };
+		B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModelProtocol.swift; sourceTree = "<group>"; };
+		B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03F6C89299E1925007D663A /* RxSwift in Frameworks */,
+				B03F6C87299E1925007D663A /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,8 +70,10 @@
 		B03F6C5C299E04DF007D663A /* CleanArcDesign */ = {
 			isa = PBXGroup;
 			children = (
+				B03F6C7F299E1314007D663A /* Core */,
 				B03F6C72299E066E007D663A /* Domain */,
 				B03F6C73299E0676007D663A /* Services */,
+				B03F6C8C299E2731007D663A /* Routers */,
 				B03F6C74299E0684007D663A /* Scenes */,
 				B03F6C71299E05F3007D663A /* Main */,
 				B03F6C66299E04E1007D663A /* Assets.xcassets */,
@@ -99,6 +111,7 @@
 		B03F6C74299E0684007D663A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B03F6C80299E1337007D663A /* Attractions */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -121,6 +134,30 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		B03F6C7F299E1314007D663A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B03F6C80299E1337007D663A /* Attractions */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6C81299E1342007D663A /* AttractionsViewController.swift */,
+				B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */,
+				B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */,
+			);
+			path = Attractions;
+			sourceTree = "<group>";
+		};
+		B03F6C8C299E2731007D663A /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +174,10 @@
 			dependencies = (
 			);
 			name = CleanArcDesign;
+			packageProductDependencies = (
+				B03F6C86299E1925007D663A /* RxCocoa */,
+				B03F6C88299E1925007D663A /* RxSwift */,
+			);
 			productName = CleanArcDesign;
 			productReference = B03F6C5A299E04DF007D663A /* CleanArcDesign.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +206,9 @@
 				Base,
 			);
 			mainGroup = B03F6C51299E04DF007D663A;
+			packageReferences = (
+				B03F6C85299E1925007D663A /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = B03F6C5B299E04DF007D663A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -196,7 +240,10 @@
 				B03F6C78299E10D3007D663A /* FetchAttractionsUseCase.swift in Sources */,
 				B03F6C5E299E04DF007D663A /* AppDelegate.swift in Sources */,
 				B03F6C60299E04DF007D663A /* SceneDelegate.swift in Sources */,
+				B03F6C84299E13FB007D663A /* AttractionsViewModelProtocol.swift in Sources */,
 				B03F6C7C299E11F0007D663A /* Coordinate.swift in Sources */,
+				B03F6C82299E1342007D663A /* AttractionsViewController.swift in Sources */,
+				B03F6C8B299E19B8007D663A /* AttractionsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +455,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B03F6C85299E1925007D663A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B03F6C86299E1925007D663A /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B03F6C85299E1925007D663A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		B03F6C88299E1925007D663A /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B03F6C85299E1925007D663A /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B03F6C52299E04DF007D663A /* Project object */;
 }
