@@ -28,12 +28,26 @@ class AppCoordinator {
         case .anyToAttractions:
             let dependencies = AttractionsViewModelDependencies(
                 attractionService: dependencies.attractionService)
+            
             let viewModel = AttractionsViewModel(dependencies: dependencies)
-            let viewController = AttractionsViewController(viewModel: viewModel)
+            
+            let viewController = AttractionsViewController(
+                viewModel: viewModel,
+                router: { [weak self] source, route in
+                    switch route {
+                    case .showAttraction(let id):
+                        self?.route(Routes.anyToAttraction(id: id), from: source)
+                    }
+                })
+            
             let displayContext = UIDisplayContext(sourceViewController: source,
                                                   method: .present(animated: true))
             return .show(target: viewController,
                          displayContext: displayContext)
+            
+        case .anyToAttraction(let id):
+            print(id)
+            return .custom
         }
     }
     
@@ -45,6 +59,7 @@ class AppCoordinator {
 
 extension AppCoordinator {
     enum Routes {
-    case anyToAttractions
+        case anyToAttractions
+        case anyToAttraction(id: Int)
     }
 }

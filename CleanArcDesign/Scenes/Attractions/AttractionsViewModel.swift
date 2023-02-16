@@ -6,18 +6,19 @@
 //
 
 import Foundation
-import Combine
+import RxSwift
+import RxCocoa
 
 public class AttractionsViewModel: AttractionsViewModelProtocol {
     
     // MARK: - Observables
-    var attractions: Published<[Attraction]?>.Publisher { $_attractions }
-    var busyFetching: Published<Bool>.Publisher { $_busyFetching }
+    var attractions: Observable<[Attraction]?> { $_attractions.asObservable() }
+    var busyFetching: Observable<Bool> { $_busyFetching.asObservable() }
     
     
     // MARK: - Stores
-    @Published private var _attractions: [Attraction]?
-    @Published private var _busyFetching: Bool = false
+    @Stored private var _attractions: [Attraction]?
+    @Stored private var _busyFetching: Bool = false
     
     // MARK: - Actions
     public func fetchMoreAttractions(startsOver: Bool) {

@@ -28,6 +28,8 @@
 		B03F6CA2299E632B007D663A /* TaipeiTravelAPI+Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA1299E632B007D663A /* TaipeiTravelAPI+Attraction.swift */; };
 		B03F6CA4299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA3299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift */; };
 		B03F6CA7299E7406007D663A /* UIViewController+Embed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */; };
+		B03F6CAA299E7ECD007D663A /* AttractionsViewController+Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA9299E7ECD007D663A /* AttractionsViewController+Routes.swift */; };
+		B03F6CAC299E85AA007D663A /* Stored.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CAB299E85AA007D663A /* Stored.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		B03F6CA1299E632B007D663A /* TaipeiTravelAPI+Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaipeiTravelAPI+Attraction.swift"; sourceTree = "<group>"; };
 		B03F6CA3299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaipeiTravelAPI+Bridging.swift"; sourceTree = "<group>"; };
 		B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Embed.swift"; sourceTree = "<group>"; };
+		B03F6CA9299E7ECD007D663A /* AttractionsViewController+Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttractionsViewController+Routes.swift"; sourceTree = "<group>"; };
+		B03F6CAB299E85AA007D663A /* Stored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stored.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 		B03F6C74299E0684007D663A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B03F6CA8299E7746007D663A /* Root */,
 				B03F6C80299E1337007D663A /* Attractions */,
 			);
 			path = Scenes;
@@ -185,9 +190,10 @@
 		B03F6C80299E1337007D663A /* Attractions */ = {
 			isa = PBXGroup;
 			children = (
-				B03F6C81299E1342007D663A /* AttractionsViewController.swift */,
 				B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */,
 				B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */,
+				B03F6C81299E1342007D663A /* AttractionsViewController.swift */,
+				B03F6CA9299E7ECD007D663A /* AttractionsViewController+Routes.swift */,
 			);
 			path = Attractions;
 			sourceTree = "<group>";
@@ -241,8 +247,16 @@
 			isa = PBXGroup;
 			children = (
 				B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */,
+				B03F6CAB299E85AA007D663A /* Stored.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		B03F6CA8299E7746007D663A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03F6CAC299E85AA007D663A /* Stored.swift in Sources */,
 				B03F6CA7299E7406007D663A /* UIViewController+Embed.swift in Sources */,
 				B03F6C7A299E1158007D663A /* Attraction.swift in Sources */,
 				B03F6C9E299E345D007D663A /* TaipeiTravelAPI.swift in Sources */,
@@ -375,6 +390,7 @@
 				B03F6CA4299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift in Sources */,
 				B03F6C82299E1342007D663A /* AttractionsViewController.swift in Sources */,
 				B03F6C94299E3017007D663A /* AppRouter.swift in Sources */,
+				B03F6CAA299E7ECD007D663A /* AttractionsViewController+Routes.swift in Sources */,
 				B03F6C8B299E19B8007D663A /* AttractionsViewModel.swift in Sources */,
 				B03F6C90299E283E007D663A /* Router.swift in Sources */,
 			);
