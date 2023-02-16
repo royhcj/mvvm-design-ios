@@ -10,6 +10,7 @@ import Foundation
 public struct Attraction {
     var id: Int
     var name: String
+    var introduction: String
     var openTimeText: String
     var address: String
     var coordinate: Coordinate
