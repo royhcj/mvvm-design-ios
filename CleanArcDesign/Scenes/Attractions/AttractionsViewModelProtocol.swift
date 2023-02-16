@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol AttractionsViewModelProtocol {
+protocol AttractionsViewModelProtocol: AnyObject {
     
     // MARK: - Observables
     var attractions: Observable<[Attraction]?> { get }

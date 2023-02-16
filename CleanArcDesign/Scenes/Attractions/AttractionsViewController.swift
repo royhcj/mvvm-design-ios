@@ -45,6 +45,7 @@ class AttractionsViewController: UIViewController,
         view.backgroundColor = .systemCyan
         
         tableView = UITableView()
+        tableView.register(AttractionCell.self, forCellReuseIdentifier: AttractionCell.cellIdentifier)
         view.addSubview(tableView)
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
@@ -55,9 +56,18 @@ class AttractionsViewController: UIViewController,
     private func bindViewModel() {
         viewModel.attractions
             .filterNil()
-            .bind(to: tableView.rx.items(cellIdentifier: "AttractionCell", cellType: UITableViewCell.self)) { (index, model, cell) in
-                
+            .bind(to: tableView.rx.items(cellIdentifier: AttractionCell.cellIdentifier,
+                                         cellType: AttractionCell.self)) {
+                (index, attraction, cell) in
+                cell.configure(with: attraction)
             }.disposed(by: bag)
+        
+        
+        tableView.rx.modelSelected(Attraction.self)
+            .subscribe(onNext: { [weak self] attraction in
+                guard let self = self else { return }
+                self.router(self, .showAttraction(id: attraction.id))
+            }).disposed(by: bag)
     }
 }
 

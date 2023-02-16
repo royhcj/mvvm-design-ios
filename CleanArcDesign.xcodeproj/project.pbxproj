@@ -30,6 +30,7 @@
 		B03F6CA7299E7406007D663A /* UIViewController+Embed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */; };
 		B03F6CAA299E7ECD007D663A /* AttractionsViewController+Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA9299E7ECD007D663A /* AttractionsViewController+Routes.swift */; };
 		B03F6CAC299E85AA007D663A /* Stored.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CAB299E85AA007D663A /* Stored.swift */; };
+		B03F6CAF299E8AE1007D663A /* AttractionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CAE299E8AE1007D663A /* AttractionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Embed.swift"; sourceTree = "<group>"; };
 		B03F6CA9299E7ECD007D663A /* AttractionsViewController+Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttractionsViewController+Routes.swift"; sourceTree = "<group>"; };
 		B03F6CAB299E85AA007D663A /* Stored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stored.swift; sourceTree = "<group>"; };
+		B03F6CAE299E8AE1007D663A /* AttractionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +196,7 @@
 				B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */,
 				B03F6C81299E1342007D663A /* AttractionsViewController.swift */,
 				B03F6CA9299E7ECD007D663A /* AttractionsViewController+Routes.swift */,
+				B03F6CAD299E8AD4007D663A /* UIComponents */,
 			);
 			path = Attractions;
 			sourceTree = "<group>";
@@ -257,6 +260,14 @@
 			children = (
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		B03F6CAD299E8AD4007D663A /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6CAE299E8AE1007D663A /* AttractionCell.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +391,7 @@
 				B03F6C7E299E1226007D663A /* ImageResource.swift in Sources */,
 				B03F6C96299E30B1007D663A /* AttractionService.swift in Sources */,
 				B03F6CA2299E632B007D663A /* TaipeiTravelAPI+Attraction.swift in Sources */,
+				B03F6CAF299E8AE1007D663A /* AttractionCell.swift in Sources */,
 				B03F6C78299E10D3007D663A /* FetchAttractionsUseCase.swift in Sources */,
 				B03F6C5E299E04DF007D663A /* AppDelegate.swift in Sources */,
 				B03F6C60299E04DF007D663A /* SceneDelegate.swift in Sources */,
