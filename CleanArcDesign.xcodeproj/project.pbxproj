@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		B03F6C5E299E04DF007D663A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C5D299E04DF007D663A /* AppDelegate.swift */; };
 		B03F6C60299E04DF007D663A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C5F299E04DF007D663A /* SceneDelegate.swift */; };
-		B03F6C62299E04DF007D663A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C61299E04DF007D663A /* ViewController.swift */; };
 		B03F6C67299E04E1007D663A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03F6C66299E04E1007D663A /* Assets.xcassets */; };
 		B03F6C6A299E04E1007D663A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03F6C68299E04E1007D663A /* LaunchScreen.storyboard */; };
+		B03F6C78299E10D3007D663A /* FetchAttractionsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C77299E10D3007D663A /* FetchAttractionsUseCase.swift */; };
+		B03F6C7A299E1158007D663A /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C79299E1158007D663A /* Attraction.swift */; };
+		B03F6C7C299E11F0007D663A /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C7B299E11F0007D663A /* Coordinate.swift */; };
+		B03F6C7E299E1226007D663A /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C7D299E1226007D663A /* ImageResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B03F6C5A299E04DF007D663A /* CleanArcDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArcDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03F6C5D299E04DF007D663A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B03F6C5F299E04DF007D663A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B03F6C61299E04DF007D663A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B03F6C66299E04E1007D663A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B03F6C69299E04E1007D663A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B03F6C6B299E04E1007D663A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B03F6C77299E10D3007D663A /* FetchAttractionsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAttractionsUseCase.swift; sourceTree = "<group>"; };
+		B03F6C79299E1158007D663A /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
+		B03F6C7B299E11F0007D663A /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		B03F6C7D299E1226007D663A /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,65 @@
 		B03F6C5C299E04DF007D663A /* CleanArcDesign */ = {
 			isa = PBXGroup;
 			children = (
-				B03F6C5D299E04DF007D663A /* AppDelegate.swift */,
-				B03F6C5F299E04DF007D663A /* SceneDelegate.swift */,
-				B03F6C61299E04DF007D663A /* ViewController.swift */,
+				B03F6C72299E066E007D663A /* Domain */,
+				B03F6C73299E0676007D663A /* Services */,
+				B03F6C74299E0684007D663A /* Scenes */,
+				B03F6C71299E05F3007D663A /* Main */,
 				B03F6C66299E04E1007D663A /* Assets.xcassets */,
-				B03F6C68299E04E1007D663A /* LaunchScreen.storyboard */,
 				B03F6C6B299E04E1007D663A /* Info.plist */,
 			);
 			path = CleanArcDesign;
+			sourceTree = "<group>";
+		};
+		B03F6C71299E05F3007D663A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6C5D299E04DF007D663A /* AppDelegate.swift */,
+				B03F6C5F299E04DF007D663A /* SceneDelegate.swift */,
+				B03F6C68299E04E1007D663A /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B03F6C72299E066E007D663A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6C75299E0D93007D663A /* Models */,
+				B03F6C76299E0DA6007D663A /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B03F6C73299E0676007D663A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B03F6C74299E0684007D663A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B03F6C75299E0D93007D663A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6C7B299E11F0007D663A /* Coordinate.swift */,
+				B03F6C7D299E1226007D663A /* ImageResource.swift */,
+				B03F6C79299E1158007D663A /* Attraction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B03F6C76299E0DA6007D663A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6C77299E10D3007D663A /* FetchAttractionsUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B03F6C62299E04DF007D663A /* ViewController.swift in Sources */,
+				B03F6C7A299E1158007D663A /* Attraction.swift in Sources */,
+				B03F6C7E299E1226007D663A /* ImageResource.swift in Sources */,
+				B03F6C78299E10D3007D663A /* FetchAttractionsUseCase.swift in Sources */,
 				B03F6C5E299E04DF007D663A /* AppDelegate.swift in Sources */,
 				B03F6C60299E04DF007D663A /* SceneDelegate.swift in Sources */,
+				B03F6C7C299E11F0007D663A /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
