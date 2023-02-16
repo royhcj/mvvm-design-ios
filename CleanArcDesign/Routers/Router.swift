@@ -8,14 +8,13 @@
 import UIKit
 
 public class Router {
-    public func route(_ route: Routable, from viewController: UIViewController) {
-        let behavior = route.behavior(from: viewController)
+    public func perform(_ behavior: RouteBehavior, from source: UIViewController) {
         
         switch behavior {
         case let .show(target, displayContext, configuration):
             target.displayContext = displayContext
             displayContext.display(target)
-            configuration?(viewController, target)
+            configuration?(source, target)
         case let .close(target):
             target.displayContext?.undisplay()
         case .custom:
@@ -23,10 +22,6 @@ public class Router {
         }
     }
     
-}
-
-public protocol Routable {
-    func behavior(from viewController: UIViewController) -> RouteBehavior
 }
 
 public protocol RoutableViewController: UIViewController {
@@ -41,7 +36,6 @@ public enum RouteBehavior {
     case custom
 }
 
-
 public struct UIDisplayContext {
     public func display(_ viewController: UIViewController) {
         
@@ -52,6 +46,7 @@ public struct UIDisplayContext {
     }
     
     public weak var sourceViewController: UIViewController?
+    public var method: DisplayMethod
     
     public enum DisplayMethod {
         case present(animated: Bool)

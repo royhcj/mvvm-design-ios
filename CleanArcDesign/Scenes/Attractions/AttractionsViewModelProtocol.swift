@@ -21,8 +21,8 @@ protocol AttractionsViewModelProtocol {
     var dependencies: AttractionsViewModelDependencies { get }
 }
 
-protocol AttractionsViewModelDependencies {
-    var attractionService: AttractionService { get }
+struct AttractionsViewModelDependencies {
+    var attractionService: AttractionService
 }
 
 

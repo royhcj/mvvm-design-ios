@@ -20,7 +20,6 @@
 		B03F6C84299E13FB007D663A /* AttractionsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */; };
 		B03F6C8B299E19B8007D663A /* AttractionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */; };
 		B03F6C90299E283E007D663A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C8F299E283E007D663A /* Router.swift */; };
-		B03F6C92299E2E63007D663A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C91299E2E63007D663A /* HomeRouter.swift */; };
 		B03F6C94299E3017007D663A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C93299E3017007D663A /* AppRouter.swift */; };
 		B03F6C96299E30B1007D663A /* AttractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C95299E30B1007D663A /* AttractionService.swift */; };
 		B03F6C99299E3147007D663A /* TaipeiTravelAttractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C98299E3147007D663A /* TaipeiTravelAttractionService.swift */; };
@@ -48,7 +47,6 @@
 		B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModelProtocol.swift; sourceTree = "<group>"; };
 		B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModel.swift; sourceTree = "<group>"; };
 		B03F6C8F299E283E007D663A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		B03F6C91299E2E63007D663A /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		B03F6C93299E3017007D663A /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		B03F6C95299E30B1007D663A /* AttractionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionService.swift; sourceTree = "<group>"; };
 		B03F6C98299E3147007D663A /* TaipeiTravelAttractionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiTravelAttractionService.swift; sourceTree = "<group>"; };
@@ -196,7 +194,6 @@
 			children = (
 				B03F6C8F299E283E007D663A /* Router.swift */,
 				B03F6C93299E3017007D663A /* AppRouter.swift */,
-				B03F6C91299E2E63007D663A /* HomeRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -368,7 +365,6 @@
 				B03F6C94299E3017007D663A /* AppRouter.swift in Sources */,
 				B03F6C8B299E19B8007D663A /* AttractionsViewModel.swift in Sources */,
 				B03F6C90299E283E007D663A /* Router.swift in Sources */,
-				B03F6C92299E2E63007D663A /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

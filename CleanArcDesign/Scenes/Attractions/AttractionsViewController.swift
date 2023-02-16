@@ -7,7 +7,10 @@
 
 import UIKit
 
-class AttractionsViewController: UIViewController {
+class AttractionsViewController: UIViewController,
+                                 RoutableViewController {
+    var displayContext: UIDisplayContext?
+    
     let viewModel: AttractionsViewModelProtocol
     
     init(viewModel: AttractionsViewModelProtocol) {
