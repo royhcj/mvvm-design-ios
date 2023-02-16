@@ -21,10 +21,10 @@ public class AttractionsViewModel: AttractionsViewModelProtocol {
     
     // MARK: - Actions
     public func fetchMoreAttractions(startsOver: Bool) {
-        dependencies.fetchAttraction.fetchAttractions(pageNumber: 1) { [weak self] result in
+        dependencies.attractionService.fetchAttractions(pageNumber: 1) { [weak self] result in
             switch result {
             case .success(let attractions):
-                self?.attractions = attractions
+                self?._attractions = attractions
             case .failure(let error):
                 print(error)
             }

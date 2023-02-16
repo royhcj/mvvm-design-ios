@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Attraction {
+public struct Attraction {
     var id: Int
     var name: String
     var openTimeText: String

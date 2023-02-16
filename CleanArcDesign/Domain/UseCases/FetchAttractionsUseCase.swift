@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol FetchAttractionsUseCase {
-    func fetchAttractions(pageNumber: Int, completion: @escaping (Result<[Attraction], Error>) -> Void)
-}
+//protocol FetchAttractionsUseCase {
+//    func fetchAttractions(pageNumber: Int, completion: @escaping (Result<[Attraction], Error>) -> Void)
+//}

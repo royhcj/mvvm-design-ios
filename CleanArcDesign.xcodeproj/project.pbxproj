@@ -17,9 +17,13 @@
 		B03F6C7E299E1226007D663A /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C7D299E1226007D663A /* ImageResource.swift */; };
 		B03F6C82299E1342007D663A /* AttractionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C81299E1342007D663A /* AttractionsViewController.swift */; };
 		B03F6C84299E13FB007D663A /* AttractionsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */; };
-		B03F6C87299E1925007D663A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B03F6C86299E1925007D663A /* RxCocoa */; };
-		B03F6C89299E1925007D663A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B03F6C88299E1925007D663A /* RxSwift */; };
 		B03F6C8B299E19B8007D663A /* AttractionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */; };
+		B03F6C90299E283E007D663A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C8F299E283E007D663A /* Router.swift */; };
+		B03F6C92299E2E63007D663A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C91299E2E63007D663A /* HomeRouter.swift */; };
+		B03F6C94299E3017007D663A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C93299E3017007D663A /* AppRouter.swift */; };
+		B03F6C96299E30B1007D663A /* AttractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C95299E30B1007D663A /* AttractionService.swift */; };
+		B03F6C99299E3147007D663A /* TaipeiTravelAttractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C98299E3147007D663A /* TaipeiTravelAttractionService.swift */; };
+		B03F6C9E299E345D007D663A /* TaipeiTravelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C9D299E345D007D663A /* TaipeiTravelAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,12 @@
 		B03F6C81299E1342007D663A /* AttractionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewController.swift; sourceTree = "<group>"; };
 		B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModelProtocol.swift; sourceTree = "<group>"; };
 		B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModel.swift; sourceTree = "<group>"; };
+		B03F6C8F299E283E007D663A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B03F6C91299E2E63007D663A /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		B03F6C93299E3017007D663A /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		B03F6C95299E30B1007D663A /* AttractionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionService.swift; sourceTree = "<group>"; };
+		B03F6C98299E3147007D663A /* TaipeiTravelAttractionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiTravelAttractionService.swift; sourceTree = "<group>"; };
+		B03F6C9D299E345D007D663A /* TaipeiTravelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiTravelAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,8 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B03F6C89299E1925007D663A /* RxSwift in Frameworks */,
-				B03F6C87299E1925007D663A /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +112,8 @@
 		B03F6C73299E0676007D663A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B03F6C9C299E3447007D663A /* Platforms */,
+				B03F6C97299E3118007D663A /* AttractionService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -154,8 +164,44 @@
 		B03F6C8C299E2731007D663A /* Routers */ = {
 			isa = PBXGroup;
 			children = (
+				B03F6C8F299E283E007D663A /* Router.swift */,
+				B03F6C93299E3017007D663A /* AppRouter.swift */,
+				B03F6C91299E2E63007D663A /* HomeRouter.swift */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		B03F6C97299E3118007D663A /* AttractionService */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6C95299E30B1007D663A /* AttractionService.swift */,
+				B03F6C9A299E315A007D663A /* TaipeiTravelAttractionService */,
+			);
+			path = AttractionService;
+			sourceTree = "<group>";
+		};
+		B03F6C9A299E315A007D663A /* TaipeiTravelAttractionService */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6C98299E3147007D663A /* TaipeiTravelAttractionService.swift */,
+			);
+			path = TaipeiTravelAttractionService;
+			sourceTree = "<group>";
+		};
+		B03F6C9B299E3434007D663A /* TaipeiTravelAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6C9D299E345D007D663A /* TaipeiTravelAPI.swift */,
+			);
+			path = TaipeiTravelAPI;
+			sourceTree = "<group>";
+		};
+		B03F6C9C299E3447007D663A /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6C9B299E3434007D663A /* TaipeiTravelAPI */,
+			);
+			path = Platforms;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +221,6 @@
 			);
 			name = CleanArcDesign;
 			packageProductDependencies = (
-				B03F6C86299E1925007D663A /* RxCocoa */,
-				B03F6C88299E1925007D663A /* RxSwift */,
 			);
 			productName = CleanArcDesign;
 			productReference = B03F6C5A299E04DF007D663A /* CleanArcDesign.app */;
@@ -207,7 +251,6 @@
 			);
 			mainGroup = B03F6C51299E04DF007D663A;
 			packageReferences = (
-				B03F6C85299E1925007D663A /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = B03F6C5B299E04DF007D663A /* Products */;
 			projectDirPath = "";
@@ -236,14 +279,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B03F6C7A299E1158007D663A /* Attraction.swift in Sources */,
+				B03F6C9E299E345D007D663A /* TaipeiTravelAPI.swift in Sources */,
 				B03F6C7E299E1226007D663A /* ImageResource.swift in Sources */,
+				B03F6C96299E30B1007D663A /* AttractionService.swift in Sources */,
 				B03F6C78299E10D3007D663A /* FetchAttractionsUseCase.swift in Sources */,
 				B03F6C5E299E04DF007D663A /* AppDelegate.swift in Sources */,
 				B03F6C60299E04DF007D663A /* SceneDelegate.swift in Sources */,
+				B03F6C99299E3147007D663A /* TaipeiTravelAttractionService.swift in Sources */,
 				B03F6C84299E13FB007D663A /* AttractionsViewModelProtocol.swift in Sources */,
 				B03F6C7C299E11F0007D663A /* Coordinate.swift in Sources */,
 				B03F6C82299E1342007D663A /* AttractionsViewController.swift in Sources */,
+				B03F6C94299E3017007D663A /* AppRouter.swift in Sources */,
 				B03F6C8B299E19B8007D663A /* AttractionsViewModel.swift in Sources */,
+				B03F6C90299E283E007D663A /* Router.swift in Sources */,
+				B03F6C92299E2E63007D663A /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,30 +504,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B03F6C85299E1925007D663A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B03F6C86299E1925007D663A /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B03F6C85299E1925007D663A /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		B03F6C88299E1925007D663A /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B03F6C85299E1925007D663A /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B03F6C52299E04DF007D663A /* Project object */;
 }

@@ -22,7 +22,7 @@ protocol AttractionsViewModelProtocol {
 }
 
 protocol AttractionsViewModelDependencies {
-    var fetchAttraction: FetchAttractionsUseCase { get }
+    var attractionService: AttractionService { get }
 }
 
 
