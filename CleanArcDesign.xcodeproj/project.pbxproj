@@ -27,6 +27,7 @@
 		B03F6CA0299E61D0007D663A /* TaipeiTravelAPI+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C9F299E61D0007D663A /* TaipeiTravelAPI+Models.swift */; };
 		B03F6CA2299E632B007D663A /* TaipeiTravelAPI+Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA1299E632B007D663A /* TaipeiTravelAPI+Attraction.swift */; };
 		B03F6CA4299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA3299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift */; };
+		B03F6CA7299E7406007D663A /* UIViewController+Embed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		B03F6C9F299E61D0007D663A /* TaipeiTravelAPI+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaipeiTravelAPI+Models.swift"; sourceTree = "<group>"; };
 		B03F6CA1299E632B007D663A /* TaipeiTravelAPI+Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaipeiTravelAPI+Attraction.swift"; sourceTree = "<group>"; };
 		B03F6CA3299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaipeiTravelAPI+Bridging.swift"; sourceTree = "<group>"; };
+		B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Embed.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		B03F6C5C299E04DF007D663A /* CleanArcDesign */ = {
 			isa = PBXGroup;
 			children = (
+				B03F6CA5299E73F9007D663A /* Utility */,
 				B03F6C7F299E1314007D663A /* Core */,
 				B03F6C72299E066E007D663A /* Domain */,
 				B03F6C73299E0676007D663A /* Services */,
@@ -234,6 +237,14 @@
 			path = Platforms;
 			sourceTree = "<group>";
 		};
+		B03F6CA5299E73F9007D663A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -348,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03F6CA7299E7406007D663A /* UIViewController+Embed.swift in Sources */,
 				B03F6C7A299E1158007D663A /* Attraction.swift in Sources */,
 				B03F6C9E299E345D007D663A /* TaipeiTravelAPI.swift in Sources */,
 				B03F6C7E299E1226007D663A /* ImageResource.swift in Sources */,
