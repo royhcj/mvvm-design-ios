@@ -10,3 +10,7 @@ import Foundation
 public protocol AttractionService {
     func fetchAttractions(pageNumber: Int, completion: @escaping (Result<[Attraction], Error>) -> Void)
 }
+
+public enum AttractionServiceError: Error {
+    case underlyingError
+}

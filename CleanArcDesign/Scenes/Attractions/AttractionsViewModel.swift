@@ -22,7 +22,13 @@ public class AttractionsViewModel: AttractionsViewModelProtocol {
     
     // MARK: - Actions
     public func fetchMoreAttractions(startsOver: Bool) {
+        guard !_busyFetching else { return }
+        
+        _busyFetching = true
+        
         dependencies.attractionService.fetchAttractions(pageNumber: 1) { [weak self] result in
+            self?._busyFetching = false
+            
             switch result {
             case .success(let attractions):
                 self?._attractions = attractions
@@ -36,7 +42,7 @@ public class AttractionsViewModel: AttractionsViewModelProtocol {
     init(dependencies: AttractionsViewModelDependencies) {
         self.dependencies = dependencies
         
-        fetchMoreAttractions(startsOver: true)
+        
     }
     
     // MARK: - Dependencies

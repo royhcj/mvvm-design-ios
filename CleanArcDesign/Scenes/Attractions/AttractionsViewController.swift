@@ -10,6 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 import RxOptional
+import RxViewController
 
 class AttractionsViewController: UIViewController,
                                  RoutableViewController {
@@ -42,7 +43,7 @@ class AttractionsViewController: UIViewController,
     private func createLayout() {
         title = "Attractions"
         
-        view.backgroundColor = .systemCyan
+        view.backgroundColor = .cyan
         
         tableView = UITableView()
         tableView.separatorStyle = .none
@@ -63,6 +64,10 @@ class AttractionsViewController: UIViewController,
                 cell.configure(with: attraction)
             }.disposed(by: bag)
         
+        rx.viewWillAppear.take(1)
+            .subscribe(onNext: { [weak viewModel] _ in
+                viewModel?.fetchMoreAttractions(startsOver: true)
+            }).disposed(by: bag)
         
         tableView.rx.modelSelected(Attraction.self)
             .subscribe(onNext: { [weak self] attraction in

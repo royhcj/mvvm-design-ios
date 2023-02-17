@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ImageResource {
-    let url: URL
-    let subject: String
+public struct ImageResource: Equatable {
+    public let url: URL
+    public let subject: String
 }

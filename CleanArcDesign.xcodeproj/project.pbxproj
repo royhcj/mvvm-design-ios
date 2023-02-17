@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1303B4150EAFAC4C9A907D65 /* Pods_CleanArcDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048EA1B36AEBF7D6F730F787 /* Pods_CleanArcDesign.framework */; };
+		24159A85C3C4CB11AE49772C /* Pods_CleanArcDesignTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F943337D39D8C316AB317A46 /* Pods_CleanArcDesignTests.framework */; };
 		B03F6C5E299E04DF007D663A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C5D299E04DF007D663A /* AppDelegate.swift */; };
 		B03F6C60299E04DF007D663A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C5F299E04DF007D663A /* SceneDelegate.swift */; };
 		B03F6C67299E04E1007D663A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03F6C66299E04E1007D663A /* Assets.xcassets */; };
@@ -38,12 +39,25 @@
 		B03F6CB9299E90A5007D663A /* RootViewController+Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CB8299E90A5007D663A /* RootViewController+Routes.swift */; };
 		B03F6CBC299E99AB007D663A /* BasicNetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CBB299E99AB007D663A /* BasicNetworkLoggerPlugin.swift */; };
 		B03F6CBE299E9A9B007D663A /* RResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CBD299E9A9B007D663A /* RResult.swift */; };
+		B03F6CC6299E9FF3007D663A /* CleanArcDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CC5299E9FF3007D663A /* CleanArcDesignTests.swift */; };
+		B03F6CCF299EA028007D663A /* AttractionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CCE299EA028007D663A /* AttractionsViewModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B03F6CC7299E9FF3007D663A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03F6C52299E04DF007D663A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B03F6C59299E04DF007D663A;
+			remoteInfo = CleanArcDesign;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		048EA1B36AEBF7D6F730F787 /* Pods_CleanArcDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArcDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2794C93B5359E59A47627AE4 /* Pods-CleanArcDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArcDesign.release.xcconfig"; path = "Target Support Files/Pods-CleanArcDesign/Pods-CleanArcDesign.release.xcconfig"; sourceTree = "<group>"; };
 		2BA60893EBCA0C7B99C3A510 /* Pods-CleanArcDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArcDesign.debug.xcconfig"; path = "Target Support Files/Pods-CleanArcDesign/Pods-CleanArcDesign.debug.xcconfig"; sourceTree = "<group>"; };
+		90DFF3490FCA1578F6949288 /* Pods-CleanArcDesignTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArcDesignTests.release.xcconfig"; path = "Target Support Files/Pods-CleanArcDesignTests/Pods-CleanArcDesignTests.release.xcconfig"; sourceTree = "<group>"; };
 		B03F6C5A299E04DF007D663A /* CleanArcDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArcDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03F6C5D299E04DF007D663A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B03F6C5F299E04DF007D663A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +90,11 @@
 		B03F6CB8299E90A5007D663A /* RootViewController+Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewController+Routes.swift"; sourceTree = "<group>"; };
 		B03F6CBB299E99AB007D663A /* BasicNetworkLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNetworkLoggerPlugin.swift; sourceTree = "<group>"; };
 		B03F6CBD299E9A9B007D663A /* RResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RResult.swift; sourceTree = "<group>"; };
+		B03F6CC3299E9FF3007D663A /* CleanArcDesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArcDesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B03F6CC5299E9FF3007D663A /* CleanArcDesignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArcDesignTests.swift; sourceTree = "<group>"; };
+		B03F6CCE299EA028007D663A /* AttractionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModelTests.swift; sourceTree = "<group>"; };
+		F647AE814BA3F02CD2C796DE /* Pods-CleanArcDesignTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArcDesignTests.debug.xcconfig"; path = "Target Support Files/Pods-CleanArcDesignTests/Pods-CleanArcDesignTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F943337D39D8C316AB317A46 /* Pods_CleanArcDesignTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArcDesignTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +106,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B03F6CC0299E9FF3007D663A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24159A85C3C4CB11AE49772C /* Pods_CleanArcDesignTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -95,6 +122,8 @@
 			children = (
 				2BA60893EBCA0C7B99C3A510 /* Pods-CleanArcDesign.debug.xcconfig */,
 				2794C93B5359E59A47627AE4 /* Pods-CleanArcDesign.release.xcconfig */,
+				F647AE814BA3F02CD2C796DE /* Pods-CleanArcDesignTests.debug.xcconfig */,
+				90DFF3490FCA1578F6949288 /* Pods-CleanArcDesignTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -103,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				048EA1B36AEBF7D6F730F787 /* Pods_CleanArcDesign.framework */,
+				F943337D39D8C316AB317A46 /* Pods_CleanArcDesignTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				B03F6C5C299E04DF007D663A /* CleanArcDesign */,
+				B03F6CC4299E9FF3007D663A /* CleanArcDesignTests */,
 				B03F6C5B299E04DF007D663A /* Products */,
 				0EE401AB72750188B9CF2589 /* Pods */,
 				5C632566BC526E44AB7FED49 /* Frameworks */,
@@ -121,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				B03F6C5A299E04DF007D663A /* CleanArcDesign.app */,
+				B03F6CC3299E9FF3007D663A /* CleanArcDesignTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,6 +281,7 @@
 				B03F6CA1299E632B007D663A /* TaipeiTravelAPI+Attraction.swift */,
 				B03F6C9F299E61D0007D663A /* TaipeiTravelAPI+Models.swift */,
 				B03F6CA3299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift */,
+				B03F6CBB299E99AB007D663A /* BasicNetworkLoggerPlugin.swift */,
 				B03F6CBD299E9A9B007D663A /* RResult.swift */,
 			);
 			path = TaipeiTravelAPI;
@@ -265,7 +298,6 @@
 		B03F6CA5299E73F9007D663A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				B03F6CBA299E9997007D663A /* Network */,
 				B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */,
 				B03F6CAB299E85AA007D663A /* Stored.swift */,
 			);
@@ -291,12 +323,29 @@
 			path = UIComponents;
 			sourceTree = "<group>";
 		};
-		B03F6CBA299E9997007D663A /* Network */ = {
+		B03F6CC4299E9FF3007D663A /* CleanArcDesignTests */ = {
 			isa = PBXGroup;
 			children = (
-				B03F6CBB299E99AB007D663A /* BasicNetworkLoggerPlugin.swift */,
+				B03F6CCC299EA006007D663A /* Scenes */,
+				B03F6CC5299E9FF3007D663A /* CleanArcDesignTests.swift */,
 			);
-			path = Network;
+			path = CleanArcDesignTests;
+			sourceTree = "<group>";
+		};
+		B03F6CCC299EA006007D663A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6CCD299EA00D007D663A /* Attractions */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B03F6CCD299EA00D007D663A /* Attractions */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6CCE299EA028007D663A /* AttractionsViewModelTests.swift */,
+			);
+			path = Attractions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +370,26 @@
 			productReference = B03F6C5A299E04DF007D663A /* CleanArcDesign.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B03F6CC2299E9FF3007D663A /* CleanArcDesignTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B03F6CCB299E9FF3007D663A /* Build configuration list for PBXNativeTarget "CleanArcDesignTests" */;
+			buildPhases = (
+				66286FE400C23883729464A5 /* [CP] Check Pods Manifest.lock */,
+				B03F6CBF299E9FF3007D663A /* Sources */,
+				B03F6CC0299E9FF3007D663A /* Frameworks */,
+				B03F6CC1299E9FF3007D663A /* Resources */,
+				B99E7A2E08E16011885E62FB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B03F6CC8299E9FF3007D663A /* PBXTargetDependency */,
+			);
+			name = CleanArcDesignTests;
+			productName = CleanArcDesignTests;
+			productReference = B03F6CC3299E9FF3007D663A /* CleanArcDesignTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -333,6 +402,10 @@
 				TargetAttributes = {
 					B03F6C59299E04DF007D663A = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					B03F6CC2299E9FF3007D663A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = B03F6C59299E04DF007D663A;
 					};
 				};
 			};
@@ -350,6 +423,7 @@
 			projectRoot = "";
 			targets = (
 				B03F6C59299E04DF007D663A /* CleanArcDesign */,
+				B03F6CC2299E9FF3007D663A /* CleanArcDesignTests */,
 			);
 		};
 /* End PBXProject section */
@@ -361,6 +435,13 @@
 			files = (
 				B03F6C6A299E04E1007D663A /* LaunchScreen.storyboard in Resources */,
 				B03F6C67299E04E1007D663A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B03F6CC1299E9FF3007D663A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +465,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanArcDesign/Pods-CleanArcDesign-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		66286FE400C23883729464A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanArcDesignTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		931539090DC4332FFD80D011 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +507,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B99E7A2E08E16011885E62FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanArcDesignTests/Pods-CleanArcDesignTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanArcDesignTests/Pods-CleanArcDesignTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanArcDesignTests/Pods-CleanArcDesignTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -444,7 +564,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B03F6CBF299E9FF3007D663A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B03F6CC6299E9FF3007D663A /* CleanArcDesignTests.swift in Sources */,
+				B03F6CCF299EA028007D663A /* AttractionsViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B03F6CC8299E9FF3007D663A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B03F6C59299E04DF007D663A /* CleanArcDesign */;
+			targetProxy = B03F6CC7299E9FF3007D663A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B03F6C68299E04E1007D663A /* LaunchScreen.storyboard */ = {
@@ -586,6 +723,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -616,6 +754,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -629,6 +768,44 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B03F6CC9299E9FF3007D663A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F647AE814BA3F02CD2C796DE /* Pods-CleanArcDesignTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CleanArcDesignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanArcDesign.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CleanArcDesign";
+			};
+			name = Debug;
+		};
+		B03F6CCA299E9FF3007D663A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90DFF3490FCA1578F6949288 /* Pods-CleanArcDesignTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CleanArcDesignTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanArcDesign.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CleanArcDesign";
 			};
 			name = Release;
 		};
@@ -649,6 +826,15 @@
 			buildConfigurations = (
 				B03F6C6F299E04E1007D663A /* Debug */,
 				B03F6C70299E04E1007D663A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B03F6CCB299E9FF3007D663A /* Build configuration list for PBXNativeTarget "CleanArcDesignTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B03F6CC9299E9FF3007D663A /* Debug */,
+				B03F6CCA299E9FF3007D663A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

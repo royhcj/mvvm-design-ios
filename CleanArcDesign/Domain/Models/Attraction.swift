@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Attraction {
+public struct Attraction: Equatable {
     var id: Int
     var name: String
     var introduction: String
