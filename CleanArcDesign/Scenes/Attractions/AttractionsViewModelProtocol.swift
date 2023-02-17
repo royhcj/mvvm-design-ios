@@ -7,6 +7,7 @@
 
 import Foundation
 import Utilities
+import Domain
 import RxSwift
 import RxCocoa
 

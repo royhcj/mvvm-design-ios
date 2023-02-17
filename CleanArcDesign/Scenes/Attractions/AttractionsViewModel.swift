@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import Utilities
+import Domain
 import RxSwift
 import RxCocoa
-import Utilities
+
 
 public class AttractionsViewModel: AttractionsViewModelProtocol {
     

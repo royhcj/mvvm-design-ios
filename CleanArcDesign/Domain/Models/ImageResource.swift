@@ -10,4 +10,9 @@ import Foundation
 public struct ImageResource: Equatable {
     public let url: URL
     public let subject: String
+    
+    public init(url: URL, subject: String) {
+        self.url = url
+        self.subject = subject
+    }
 }

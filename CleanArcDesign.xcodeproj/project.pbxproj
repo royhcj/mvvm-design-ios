@@ -12,10 +12,6 @@
 		B03F6C60299E04DF007D663A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C5F299E04DF007D663A /* SceneDelegate.swift */; };
 		B03F6C67299E04E1007D663A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03F6C66299E04E1007D663A /* Assets.xcassets */; };
 		B03F6C6A299E04E1007D663A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03F6C68299E04E1007D663A /* LaunchScreen.storyboard */; };
-		B03F6C78299E10D3007D663A /* FetchAttractionsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C77299E10D3007D663A /* FetchAttractionsUseCase.swift */; };
-		B03F6C7A299E1158007D663A /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C79299E1158007D663A /* Attraction.swift */; };
-		B03F6C7C299E11F0007D663A /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C7B299E11F0007D663A /* Coordinate.swift */; };
-		B03F6C7E299E1226007D663A /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C7D299E1226007D663A /* ImageResource.swift */; };
 		B03F6C82299E1342007D663A /* AttractionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C81299E1342007D663A /* AttractionsViewController.swift */; };
 		B03F6C84299E13FB007D663A /* AttractionsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */; };
 		B03F6C8B299E19B8007D663A /* AttractionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */; };
@@ -40,6 +36,8 @@
 		B03F6CCF299EA028007D663A /* AttractionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CCE299EA028007D663A /* AttractionsViewModelTests.swift */; };
 		B03F6D31299F7594007D663A /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03F6D2A299F74CE007D663A /* Utilities.framework */; };
 		B03F6D32299F7594007D663A /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B03F6D2A299F74CE007D663A /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B03F6D7C299FC498007D663A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03F6D64299FC303007D663A /* Domain.framework */; };
+		B03F6D7D299FC498007D663A /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B03F6D64299FC303007D663A /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +62,20 @@
 			remoteGlobalIDString = B03F6D14299F74CE007D663A;
 			remoteInfo = UtilitiesTests;
 		};
+		B03F6D63299FC303007D663A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03F6D5E299FC303007D663A /* Domain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B03F6D46299FC303007D663A;
+			remoteInfo = Domain;
+		};
+		B03F6D65299FC303007D663A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03F6D5E299FC303007D663A /* Domain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B03F6D4E299FC303007D663A;
+			remoteInfo = DomainTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +85,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B03F6D7D299FC498007D663A /* Domain.framework in Embed Frameworks */,
 				B03F6D32299F7594007D663A /* Utilities.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -90,10 +103,6 @@
 		B03F6C66299E04E1007D663A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B03F6C69299E04E1007D663A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B03F6C6B299E04E1007D663A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B03F6C77299E10D3007D663A /* FetchAttractionsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAttractionsUseCase.swift; sourceTree = "<group>"; };
-		B03F6C79299E1158007D663A /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
-		B03F6C7B299E11F0007D663A /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
-		B03F6C7D299E1226007D663A /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
 		B03F6C81299E1342007D663A /* AttractionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewController.swift; sourceTree = "<group>"; };
 		B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModelProtocol.swift; sourceTree = "<group>"; };
 		B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModel.swift; sourceTree = "<group>"; };
@@ -118,6 +127,7 @@
 		B03F6CC5299E9FF3007D663A /* CleanArcDesignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArcDesignTests.swift; sourceTree = "<group>"; };
 		B03F6CCE299EA028007D663A /* AttractionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModelTests.swift; sourceTree = "<group>"; };
 		B03F6D24299F74CE007D663A /* Utilities.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Utilities.xcodeproj; path = Utilities/Utilities.xcodeproj; sourceTree = "<group>"; };
+		B03F6D5E299FC303007D663A /* Domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Domain.xcodeproj; path = Domain/Domain.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03F6D7C299FC498007D663A /* Domain.framework in Frameworks */,
 				1303B4150EAFAC4C9A907D65 /* Pods_CleanArcDesign.framework in Frameworks */,
 				B03F6D31299F7594007D663A /* Utilities.framework in Frameworks */,
 			);
@@ -181,8 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				B03F6D24299F74CE007D663A /* Utilities.xcodeproj */,
-				B03F6C7F299E1314007D663A /* Core */,
-				B03F6C72299E066E007D663A /* Domain */,
+				B03F6D5E299FC303007D663A /* Domain.xcodeproj */,
 				B03F6C73299E0676007D663A /* Services */,
 				B03F6C8C299E2731007D663A /* Routers */,
 				B03F6C74299E0684007D663A /* Scenes */,
@@ -204,15 +214,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		B03F6C72299E066E007D663A /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C75299E0D93007D663A /* Models */,
-				B03F6C76299E0DA6007D663A /* UseCases */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		B03F6C73299E0676007D663A /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,31 +230,6 @@
 				B03F6C80299E1337007D663A /* Attractions */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		B03F6C75299E0D93007D663A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C7B299E11F0007D663A /* Coordinate.swift */,
-				B03F6C7D299E1226007D663A /* ImageResource.swift */,
-				B03F6C79299E1158007D663A /* Attraction.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B03F6C76299E0DA6007D663A /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C77299E10D3007D663A /* FetchAttractionsUseCase.swift */,
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		B03F6C7F299E1314007D663A /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
 			sourceTree = "<group>";
 		};
 		B03F6C80299E1337007D663A /* Attractions */ = {
@@ -368,6 +344,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B03F6D5F299FC303007D663A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6D64299FC303007D663A /* Domain.framework */,
+				B03F6D66299FC303007D663A /* DomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -441,6 +426,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = B03F6D5F299FC303007D663A /* Products */;
+					ProjectRef = B03F6D5E299FC303007D663A /* Domain.xcodeproj */;
+				},
+				{
 					ProductGroup = B03F6D25299F74CE007D663A /* Products */;
 					ProjectRef = B03F6D24299F74CE007D663A /* Utilities.xcodeproj */;
 				},
@@ -466,6 +455,20 @@
 			fileType = wrapper.cfbundle;
 			path = UtilitiesTests.xctest;
 			remoteRef = B03F6D2B299F74CE007D663A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03F6D64299FC303007D663A /* Domain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Domain.framework;
+			remoteRef = B03F6D63299FC303007D663A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03F6D66299FC303007D663A /* DomainTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DomainTests.xctest;
+			remoteRef = B03F6D65299FC303007D663A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -537,14 +540,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B03F6CB1299E8E9B007D663A /* MainViewController.swift in Sources */,
-				B03F6C7A299E1158007D663A /* Attraction.swift in Sources */,
 				B03F6C9E299E345D007D663A /* TaipeiTravelAPI.swift in Sources */,
-				B03F6C7E299E1226007D663A /* ImageResource.swift in Sources */,
 				B03F6C96299E30B1007D663A /* AttractionService.swift in Sources */,
 				B03F6CB3299E908E007D663A /* RootViewModelProtocol.swift in Sources */,
 				B03F6CA2299E632B007D663A /* TaipeiTravelAPI+Attraction.swift in Sources */,
 				B03F6CAF299E8AE1007D663A /* AttractionCell.swift in Sources */,
-				B03F6C78299E10D3007D663A /* FetchAttractionsUseCase.swift in Sources */,
 				B03F6C5E299E04DF007D663A /* AppDelegate.swift in Sources */,
 				B03F6CB9299E90A5007D663A /* RootViewController+Routes.swift in Sources */,
 				B03F6C60299E04DF007D663A /* SceneDelegate.swift in Sources */,
@@ -552,7 +552,6 @@
 				B03F6CBC299E99AB007D663A /* BasicNetworkLoggerPlugin.swift in Sources */,
 				B03F6C84299E13FB007D663A /* AttractionsViewModelProtocol.swift in Sources */,
 				B03F6CB7299E909C007D663A /* RootViewController.swift in Sources */,
-				B03F6C7C299E11F0007D663A /* Coordinate.swift in Sources */,
 				B03F6CA0299E61D0007D663A /* TaipeiTravelAPI+Models.swift in Sources */,
 				B03F6CA4299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift in Sources */,
 				B03F6CBE299E9A9B007D663A /* RResult.swift in Sources */,

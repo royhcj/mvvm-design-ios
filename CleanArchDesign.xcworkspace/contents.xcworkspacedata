@@ -2,12 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CleanArcDesign/Utilities/Utilities.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:CleanArcDesign.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CleanArcDesign/Utilities/Utilities.xcodeproj">
    </FileRef>
 </Workspace>
