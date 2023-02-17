@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Utilities
 import RxSwift
 import RxCocoa
 

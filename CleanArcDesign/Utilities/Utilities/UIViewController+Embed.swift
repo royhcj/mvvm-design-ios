@@ -8,8 +8,8 @@
 import UIKit
 
 extension UIViewController {
-    func embed(_ childViewController: UIViewController?,
-               over view: UIView? = nil) {
+    public func embed(_ childViewController: UIViewController?,
+                      over view: UIView? = nil) {
         guard let child = childViewController,
               let view = view ?? self.view
         else { return }
@@ -26,7 +26,7 @@ extension UIViewController {
         child.didMove(toParent: self)
     }
     
-    func unembedFromParent() {
+    public func unembedFromParent() {
         view.removeFromSuperview()
         removeFromParent()
         didMove(toParent: nil)

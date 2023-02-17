@@ -8,14 +8,14 @@
 import Foundation
 import RxCocoa
 
-@propertyWrapper class Stored<T> {
+@propertyWrapper public class Stored<T> {
     var behaviorRelay: BehaviorRelay<T>
     
-    var projectedValue: BehaviorRelay<T> {
+    public var projectedValue: BehaviorRelay<T> {
         return behaviorRelay
     }
     
-    var wrappedValue: T {
+    public var wrappedValue: T {
         get {
             return behaviorRelay.value
         } set {
@@ -23,7 +23,7 @@ import RxCocoa
         }
     }
     
-    init(wrappedValue: T) {
+    public init(wrappedValue: T) {
         behaviorRelay = BehaviorRelay<T>(value: wrappedValue)
     }
 }
