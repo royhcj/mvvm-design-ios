@@ -2,10 +2,10 @@ workspace 'CleanArchDesign'
 platform :ios, '13.0'
 inhibit_all_warnings!
 
-project 'CleanArcDesign.xcodeproj'
-project 'CleanArcDesign/Utilities/Utilities.xcodeproj'
-project 'CleanArcDesign/Services/Services.xcodeproj'
-project 'CleanArcDesign/Scenes/Scenes.xcodeproj'
+#project 'CleanArcDesign.xcodeproj'
+#project 'CleanArcDesign/Utilities/Utilities.xcodeproj'
+#project 'CleanArcDesign/Services/Services.xcodeproj'
+#project 'CleanArcDesign/Scenes/Scenes.xcodeproj'
 
 def shared_pods
   use_frameworks!

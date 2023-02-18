@@ -11,9 +11,9 @@
       location = "group:CleanArcDesign/Scenes/Scenes.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CleanArcDesign/Utilities/Utilities.xcodeproj">
+      location = "group:CleanArcDesign/Services/Services.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CleanArcDesign/Services/Services.xcodeproj">
+      location = "group:CleanArcDesign/Utilities/Utilities.xcodeproj">
    </FileRef>
 </Workspace>
