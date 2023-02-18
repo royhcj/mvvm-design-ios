@@ -6,13 +6,14 @@
 //
 
 import UIKit
+import Utilities
 import SnapKit
 import RxSwift
 import RxCocoa
 import RxOptional
 
-class RootViewController: UIViewController, RoutableViewController {
-    var displayContext: UIDisplayContext?
+public class RootViewController: UIViewController, RoutableViewController {
+    public var displayContext: UIDisplayContext?
     
     var viewModel: RootViewModelProtocol
     var router: (RoutableViewController, Routes) -> Void
@@ -20,8 +21,8 @@ class RootViewController: UIViewController, RoutableViewController {
     private var bag = DisposeBag()
     
     // MARK: - Object/View lifecycle
-    init(viewModel: RootViewModelProtocol,
-         router: @escaping (RoutableViewController, Routes) -> Void) {
+    public init(viewModel: RootViewModelProtocol,
+                router: @escaping (RoutableViewController, Routes) -> Void) {
         self.viewModel = viewModel
         self.router = router
         super.init(nibName: nil, bundle: nil)

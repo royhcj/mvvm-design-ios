@@ -3,6 +3,7 @@ platform :ios, '13.0'
 
 project 'CleanArcDesign.xcodeproj'
 project 'CleanArcDesign/Utilities/Utilities.xcodeproj'
+project 'CleanArcDesign/Scenes/Scenes.xcodeproj'
 
 def shared_pods
   use_frameworks!
@@ -35,6 +36,19 @@ target :Utilities do
   end
   
   target 'UtilitiesTests' do
+    shared_pods
+  end
+end
+
+target :Scenes do
+  use_frameworks!
+  project 'CleanArcDesign/Scenes/Scenes.xcodeproj'
+  
+  target 'Scenes' do
+    shared_pods
+  end
+  
+  target 'ScenesTests' do
     shared_pods
   end
 end

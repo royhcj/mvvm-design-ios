@@ -15,8 +15,8 @@ import RxCocoa
 public class AttractionsViewModel: AttractionsViewModelProtocol {
     
     // MARK: - Observables
-    var attractions: Observable<[Attraction]?> { $_attractions.asObservable() }
-    var busyFetching: Observable<Bool> { $_busyFetching.asObservable() }
+    public var attractions: Observable<[Attraction]?> { $_attractions.asObservable() }
+    public var busyFetching: Observable<Bool> { $_busyFetching.asObservable() }
     
     
     // MARK: - Stores
@@ -42,13 +42,11 @@ public class AttractionsViewModel: AttractionsViewModelProtocol {
     }
     
     // MARK: - Setup
-    init(dependencies: AttractionsViewModelDependencies) {
+    public init(dependencies: AttractionsViewModelDependencies) {
         self.dependencies = dependencies
-        
-        
     }
     
     // MARK: - Dependencies
-    var dependencies: AttractionsViewModelDependencies
+    public var dependencies: AttractionsViewModelDependencies
 }
 

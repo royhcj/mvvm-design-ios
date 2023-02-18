@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Utilities
+import Domain
+import Scenes
 
 class AppCoordinator {
     private let dependencies: Dependencies

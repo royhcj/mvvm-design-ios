@@ -9,7 +9,7 @@ import UIKit
 
 
 extension AttractionsViewController {
-    enum Routes {
+    public enum Routes {
         case showAttraction(id: Int)
     }
 }

@@ -36,13 +36,13 @@ final class Stored·Tests: XCTestCase {
     
     func test·stored一when·assigning·some·value一should·observe·that·value() throws {
         // Given
-        var values: [Int] = [0, 1, 3, 500]
+        let values: [Int] = [0, 1, 3, 500]
+        var iterator = values.makeIterator()
         
         // Check
         $sutInt.skip(1)
             .subscribe(onNext: { value in
-                XCTAssert(value == values[0], "Should observe the same value as assigned")
-                values.removeFirst()
+                XCTAssert(value == iterator.next()!, "Should observe the same value as assigned")
             }).disposed(by: bag)
         
         for value in values {

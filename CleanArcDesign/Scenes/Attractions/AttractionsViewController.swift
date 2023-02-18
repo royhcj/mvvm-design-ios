@@ -14,9 +14,9 @@ import RxCocoa
 import RxOptional
 import RxViewController
 
-class AttractionsViewController: UIViewController,
-                                 RoutableViewController {
-    var displayContext: UIDisplayContext?
+public class AttractionsViewController: UIViewController,
+                                        RoutableViewController {
+    public var displayContext: UIDisplayContext?
     
     let viewModel: AttractionsViewModelProtocol
     let router: (RoutableViewController, Routes) -> Void
@@ -27,8 +27,8 @@ class AttractionsViewController: UIViewController,
     
     
     // MARK: - Object/View lifecycle
-    init(viewModel: AttractionsViewModelProtocol,
-         router: @escaping (RoutableViewController, Routes) -> Void) {
+    public init(viewModel: AttractionsViewModelProtocol,
+                router: @escaping (RoutableViewController, Routes) -> Void) {
         self.viewModel = viewModel
         self.router = router
         super.init(nibName: nil, bundle: nil)

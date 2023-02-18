@@ -13,6 +13,7 @@
 		B03F6D78299FC3EB007D663A /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6D75299FC3EB007D663A /* Attraction.swift */; };
 		B03F6D79299FC3EB007D663A /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6D76299FC3EB007D663A /* ImageResource.swift */; };
 		B03F6D7A299FC3EB007D663A /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6D77299FC3EB007D663A /* Coordinate.swift */; };
+		B0CC91DE29A11CCC00FEF81C /* AttractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC91DD29A11CCC00FEF81C /* AttractionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		B03F6D75299FC3EB007D663A /* Attraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
 		B03F6D76299FC3EB007D663A /* ImageResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
 		B03F6D77299FC3EB007D663A /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		B0CC91DD29A11CCC00FEF81C /* AttractionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				B03F6D74299FC3EB007D663A /* Models */,
+				B0CC91DC29A11C7A00FEF81C /* ServiceInterfaces */,
 				B03F6D52299FC303007D663A /* UnitTests */,
 				B03F6D48299FC303007D663A /* Header */,
 				B03F6D47299FC303007D663A /* Products */,
@@ -97,6 +100,14 @@
 				B03F6D75299FC3EB007D663A /* Attraction.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B0CC91DC29A11C7A00FEF81C /* ServiceInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				B0CC91DD29A11CCC00FEF81C /* AttractionService.swift */,
+			);
+			path = ServiceInterfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CC91DE29A11CCC00FEF81C /* AttractionService.swift in Sources */,
 				B03F6D78299FC3EB007D663A /* Attraction.swift in Sources */,
 				B03F6D79299FC3EB007D663A /* ImageResource.swift in Sources */,
 				B03F6D7A299FC3EB007D663A /* Coordinate.swift in Sources */,
