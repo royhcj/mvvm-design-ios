@@ -7,4 +7,13 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:CleanArcDesign/Scenes/Scenes.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CleanArcDesign/Services/Services.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CleanArcDesign/Utilities/Utilities.xcodeproj">
+   </FileRef>
 </Workspace>

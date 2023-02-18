@@ -1,4 +1,4 @@
-workspace 'CleanArchDesign'
+workspace 'CleanArcDesign'
 platform :ios, '13.0'
 inhibit_all_warnings!
 
