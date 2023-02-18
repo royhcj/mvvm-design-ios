@@ -8,6 +8,9 @@
 import UIKit
 
 public class Router {
+    public init() {
+    }
+    
     public func perform(_ behavior: RouteBehavior, from source: UIViewController) {
         
         switch behavior {
@@ -37,6 +40,12 @@ public enum RouteBehavior {
 }
 
 public struct UIDisplayContext {
+    public init(sourceViewController: UIViewController?, method: UIDisplayContext.DisplayMethod) {
+        self.sourceViewController = sourceViewController
+        self.method = method
+    }
+    
+    
     
     public func display(_ viewController: UIViewController) {
         switch method {

@@ -7,7 +7,12 @@
 
 import Foundation
 
-struct Coordinate: Equatable {
-    var latitude: Double
-    var longitude: Double
+public struct Coordinate: Equatable {
+    public var latitude: Double
+    public var longitude: Double
+    
+    public init(latitude: Double, longitude: Double) {
+        self.latitude = latitude
+        self.longitude = longitude
+    }
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Domain
 import SnapKit
 import Kingfisher
 
@@ -41,6 +42,7 @@ public class AttractionCell: UITableViewCell {
         
         photoImageView = UIImageView()
         photoImageView.contentMode = .scaleAspectFill
+        photoImageView.clipsToBounds = true
         photoImageView.snp.makeConstraints {
             $0.height.equalTo(photoImageView.snp.width)
         }

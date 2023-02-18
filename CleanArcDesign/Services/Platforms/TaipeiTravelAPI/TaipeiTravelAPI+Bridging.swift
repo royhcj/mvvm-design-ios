@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Domain
 
 extension ImageResource {
     init?(data: TaipeiTravelAPI.Models.Image) {

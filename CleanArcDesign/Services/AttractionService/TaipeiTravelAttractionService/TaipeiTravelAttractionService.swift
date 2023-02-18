@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import Domain
 
 public class TaipeiTravelAttractionService: AttractionService {
-    static let shared = TaipeiTravelAttractionService()
+    public static let shared = TaipeiTravelAttractionService()
     
     private init() {
     }

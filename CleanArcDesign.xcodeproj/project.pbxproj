@@ -8,39 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1303B4150EAFAC4C9A907D65 /* Pods_CleanArcDesign.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048EA1B36AEBF7D6F730F787 /* Pods_CleanArcDesign.framework */; };
-		24159A85C3C4CB11AE49772C /* Pods_CleanArcDesignTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F943337D39D8C316AB317A46 /* Pods_CleanArcDesignTests.framework */; };
 		B03F6C5E299E04DF007D663A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C5D299E04DF007D663A /* AppDelegate.swift */; };
 		B03F6C60299E04DF007D663A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C5F299E04DF007D663A /* SceneDelegate.swift */; };
 		B03F6C67299E04E1007D663A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B03F6C66299E04E1007D663A /* Assets.xcassets */; };
 		B03F6C6A299E04E1007D663A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03F6C68299E04E1007D663A /* LaunchScreen.storyboard */; };
-		B03F6C78299E10D3007D663A /* FetchAttractionsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C77299E10D3007D663A /* FetchAttractionsUseCase.swift */; };
-		B03F6C7A299E1158007D663A /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C79299E1158007D663A /* Attraction.swift */; };
-		B03F6C7C299E11F0007D663A /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C7B299E11F0007D663A /* Coordinate.swift */; };
-		B03F6C7E299E1226007D663A /* ImageResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C7D299E1226007D663A /* ImageResource.swift */; };
-		B03F6C82299E1342007D663A /* AttractionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C81299E1342007D663A /* AttractionsViewController.swift */; };
-		B03F6C84299E13FB007D663A /* AttractionsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */; };
-		B03F6C8B299E19B8007D663A /* AttractionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */; };
-		B03F6C90299E283E007D663A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C8F299E283E007D663A /* Router.swift */; };
-		B03F6C94299E3017007D663A /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C93299E3017007D663A /* AppRouter.swift */; };
-		B03F6C96299E30B1007D663A /* AttractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C95299E30B1007D663A /* AttractionService.swift */; };
-		B03F6C99299E3147007D663A /* TaipeiTravelAttractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C98299E3147007D663A /* TaipeiTravelAttractionService.swift */; };
-		B03F6C9E299E345D007D663A /* TaipeiTravelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C9D299E345D007D663A /* TaipeiTravelAPI.swift */; };
-		B03F6CA0299E61D0007D663A /* TaipeiTravelAPI+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6C9F299E61D0007D663A /* TaipeiTravelAPI+Models.swift */; };
-		B03F6CA2299E632B007D663A /* TaipeiTravelAPI+Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA1299E632B007D663A /* TaipeiTravelAPI+Attraction.swift */; };
-		B03F6CA4299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA3299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift */; };
-		B03F6CA7299E7406007D663A /* UIViewController+Embed.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */; };
-		B03F6CAA299E7ECD007D663A /* AttractionsViewController+Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CA9299E7ECD007D663A /* AttractionsViewController+Routes.swift */; };
-		B03F6CAC299E85AA007D663A /* Stored.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CAB299E85AA007D663A /* Stored.swift */; };
-		B03F6CAF299E8AE1007D663A /* AttractionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CAE299E8AE1007D663A /* AttractionCell.swift */; };
 		B03F6CB1299E8E9B007D663A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CB0299E8E9B007D663A /* MainViewController.swift */; };
-		B03F6CB3299E908E007D663A /* RootViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CB2299E908E007D663A /* RootViewModelProtocol.swift */; };
-		B03F6CB5299E9095007D663A /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CB4299E9095007D663A /* RootViewModel.swift */; };
-		B03F6CB7299E909C007D663A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CB6299E909C007D663A /* RootViewController.swift */; };
-		B03F6CB9299E90A5007D663A /* RootViewController+Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CB8299E90A5007D663A /* RootViewController+Routes.swift */; };
-		B03F6CBC299E99AB007D663A /* BasicNetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CBB299E99AB007D663A /* BasicNetworkLoggerPlugin.swift */; };
-		B03F6CBE299E9A9B007D663A /* RResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CBD299E9A9B007D663A /* RResult.swift */; };
 		B03F6CC6299E9FF3007D663A /* CleanArcDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CC5299E9FF3007D663A /* CleanArcDesignTests.swift */; };
 		B03F6CCF299EA028007D663A /* AttractionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CCE299EA028007D663A /* AttractionsViewModelTests.swift */; };
+		B03F6D7C299FC498007D663A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03F6D64299FC303007D663A /* Domain.framework */; };
+		B03F6D7D299FC498007D663A /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B03F6D64299FC303007D663A /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0CC91D4299FDC9300FEF81C /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC91D2299FDC9300FEF81C /* AppRouter.swift */; };
+		B0CC91D8299FDE6300FEF81C /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CC9167299FD03700FEF81C /* Utilities.framework */; };
+		B0CC91D9299FDE6300FEF81C /* Utilities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0CC9167299FD03700FEF81C /* Utilities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0CC91DA299FDE8300FEF81C /* Scenes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CC9192299FD08F00FEF81C /* Scenes.framework */; };
+		B0CC91DB299FDE8300FEF81C /* Scenes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0CC9192299FD08F00FEF81C /* Scenes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0CC922229A1236800FEF81C /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CC920729A11FED00FEF81C /* Services.framework */; };
+		B0CC922329A1236800FEF81C /* Services.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0CC920729A11FED00FEF81C /* Services.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,50 +34,100 @@
 			remoteGlobalIDString = B03F6C59299E04DF007D663A;
 			remoteInfo = CleanArcDesign;
 		};
+		B03F6D63299FC303007D663A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03F6D5E299FC303007D663A /* Domain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B03F6D46299FC303007D663A;
+			remoteInfo = Domain;
+		};
+		B03F6D65299FC303007D663A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03F6D5E299FC303007D663A /* Domain.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B03F6D4E299FC303007D663A;
+			remoteInfo = DomainTests;
+		};
+		B0CC9166299FD03700FEF81C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03F6D24299F74CE007D663A /* Utilities.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0CC915E299FCAA200FEF81C;
+			remoteInfo = Utilities;
+		};
+		B0CC9168299FD03700FEF81C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B03F6D24299F74CE007D663A /* Utilities.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0CC915F299FCAA200FEF81C;
+			remoteInfo = UtilitiesTests;
+		};
+		B0CC9191299FD08F00FEF81C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0CC918C299FD08F00FEF81C /* Scenes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0CC9174299FD08E00FEF81C;
+			remoteInfo = Scenes;
+		};
+		B0CC9193299FD08F00FEF81C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0CC918C299FD08F00FEF81C /* Scenes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0CC917C299FD08F00FEF81C;
+			remoteInfo = ScenesTests;
+		};
+		B0CC920629A11FED00FEF81C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0CC920129A11FEC00FEF81C /* Services.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0CC91E929A11FEC00FEF81C;
+			remoteInfo = Services;
+		};
+		B0CC920829A11FED00FEF81C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0CC920129A11FEC00FEF81C /* Services.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B0CC91F129A11FEC00FEF81C;
+			remoteInfo = ServicesTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B03F6D33299F7594007D663A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B03F6D7D299FC498007D663A /* Domain.framework in Embed Frameworks */,
+				B0CC91D9299FDE6300FEF81C /* Utilities.framework in Embed Frameworks */,
+				B0CC922329A1236800FEF81C /* Services.framework in Embed Frameworks */,
+				B0CC91DB299FDE8300FEF81C /* Scenes.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		048EA1B36AEBF7D6F730F787 /* Pods_CleanArcDesign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArcDesign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2794C93B5359E59A47627AE4 /* Pods-CleanArcDesign.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArcDesign.release.xcconfig"; path = "Target Support Files/Pods-CleanArcDesign/Pods-CleanArcDesign.release.xcconfig"; sourceTree = "<group>"; };
 		2BA60893EBCA0C7B99C3A510 /* Pods-CleanArcDesign.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArcDesign.debug.xcconfig"; path = "Target Support Files/Pods-CleanArcDesign/Pods-CleanArcDesign.debug.xcconfig"; sourceTree = "<group>"; };
-		90DFF3490FCA1578F6949288 /* Pods-CleanArcDesignTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArcDesignTests.release.xcconfig"; path = "Target Support Files/Pods-CleanArcDesignTests/Pods-CleanArcDesignTests.release.xcconfig"; sourceTree = "<group>"; };
 		B03F6C5A299E04DF007D663A /* CleanArcDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArcDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03F6C5D299E04DF007D663A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B03F6C5F299E04DF007D663A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B03F6C66299E04E1007D663A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B03F6C69299E04E1007D663A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B03F6C6B299E04E1007D663A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B03F6C77299E10D3007D663A /* FetchAttractionsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAttractionsUseCase.swift; sourceTree = "<group>"; };
-		B03F6C79299E1158007D663A /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
-		B03F6C7B299E11F0007D663A /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
-		B03F6C7D299E1226007D663A /* ImageResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResource.swift; sourceTree = "<group>"; };
-		B03F6C81299E1342007D663A /* AttractionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewController.swift; sourceTree = "<group>"; };
-		B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModelProtocol.swift; sourceTree = "<group>"; };
-		B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModel.swift; sourceTree = "<group>"; };
-		B03F6C8F299E283E007D663A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		B03F6C93299E3017007D663A /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		B03F6C95299E30B1007D663A /* AttractionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionService.swift; sourceTree = "<group>"; };
-		B03F6C98299E3147007D663A /* TaipeiTravelAttractionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiTravelAttractionService.swift; sourceTree = "<group>"; };
-		B03F6C9D299E345D007D663A /* TaipeiTravelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaipeiTravelAPI.swift; sourceTree = "<group>"; };
-		B03F6C9F299E61D0007D663A /* TaipeiTravelAPI+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaipeiTravelAPI+Models.swift"; sourceTree = "<group>"; };
-		B03F6CA1299E632B007D663A /* TaipeiTravelAPI+Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaipeiTravelAPI+Attraction.swift"; sourceTree = "<group>"; };
-		B03F6CA3299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TaipeiTravelAPI+Bridging.swift"; sourceTree = "<group>"; };
-		B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Embed.swift"; sourceTree = "<group>"; };
-		B03F6CA9299E7ECD007D663A /* AttractionsViewController+Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttractionsViewController+Routes.swift"; sourceTree = "<group>"; };
-		B03F6CAB299E85AA007D663A /* Stored.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stored.swift; sourceTree = "<group>"; };
-		B03F6CAE299E8AE1007D663A /* AttractionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionCell.swift; sourceTree = "<group>"; };
 		B03F6CB0299E8E9B007D663A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		B03F6CB2299E908E007D663A /* RootViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelProtocol.swift; sourceTree = "<group>"; };
-		B03F6CB4299E9095007D663A /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
-		B03F6CB6299E909C007D663A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		B03F6CB8299E90A5007D663A /* RootViewController+Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootViewController+Routes.swift"; sourceTree = "<group>"; };
-		B03F6CBB299E99AB007D663A /* BasicNetworkLoggerPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicNetworkLoggerPlugin.swift; sourceTree = "<group>"; };
-		B03F6CBD299E9A9B007D663A /* RResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RResult.swift; sourceTree = "<group>"; };
 		B03F6CC3299E9FF3007D663A /* CleanArcDesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArcDesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03F6CC5299E9FF3007D663A /* CleanArcDesignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArcDesignTests.swift; sourceTree = "<group>"; };
 		B03F6CCE299EA028007D663A /* AttractionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModelTests.swift; sourceTree = "<group>"; };
-		F647AE814BA3F02CD2C796DE /* Pods-CleanArcDesignTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanArcDesignTests.debug.xcconfig"; path = "Target Support Files/Pods-CleanArcDesignTests/Pods-CleanArcDesignTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F943337D39D8C316AB317A46 /* Pods_CleanArcDesignTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanArcDesignTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B03F6D24299F74CE007D663A /* Utilities.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Utilities.xcodeproj; path = Utilities/Utilities.xcodeproj; sourceTree = "<group>"; };
+		B03F6D5E299FC303007D663A /* Domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Domain.xcodeproj; path = Domain/Domain.xcodeproj; sourceTree = "<group>"; };
+		B0CC918C299FD08F00FEF81C /* Scenes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Scenes.xcodeproj; path = Scenes/Scenes.xcodeproj; sourceTree = "<group>"; };
+		B0CC91D2299FDC9300FEF81C /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		B0CC920129A11FEC00FEF81C /* Services.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Services.xcodeproj; path = Services/Services.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +135,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03F6D7C299FC498007D663A /* Domain.framework in Frameworks */,
+				B0CC91DA299FDE8300FEF81C /* Scenes.framework in Frameworks */,
+				B0CC91D8299FDE6300FEF81C /* Utilities.framework in Frameworks */,
+				B0CC922229A1236800FEF81C /* Services.framework in Frameworks */,
 				1303B4150EAFAC4C9A907D65 /* Pods_CleanArcDesign.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,7 +147,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24159A85C3C4CB11AE49772C /* Pods_CleanArcDesignTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,8 +158,6 @@
 			children = (
 				2BA60893EBCA0C7B99C3A510 /* Pods-CleanArcDesign.debug.xcconfig */,
 				2794C93B5359E59A47627AE4 /* Pods-CleanArcDesign.release.xcconfig */,
-				F647AE814BA3F02CD2C796DE /* Pods-CleanArcDesignTests.debug.xcconfig */,
-				90DFF3490FCA1578F6949288 /* Pods-CleanArcDesignTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -132,7 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				048EA1B36AEBF7D6F730F787 /* Pods_CleanArcDesign.framework */,
-				F943337D39D8C316AB317A46 /* Pods_CleanArcDesignTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,12 +193,11 @@
 		B03F6C5C299E04DF007D663A /* CleanArcDesign */ = {
 			isa = PBXGroup;
 			children = (
-				B03F6CA5299E73F9007D663A /* Utility */,
-				B03F6C7F299E1314007D663A /* Core */,
-				B03F6C72299E066E007D663A /* Domain */,
-				B03F6C73299E0676007D663A /* Services */,
-				B03F6C8C299E2731007D663A /* Routers */,
-				B03F6C74299E0684007D663A /* Scenes */,
+				B03F6D24299F74CE007D663A /* Utilities.xcodeproj */,
+				B03F6D5E299FC303007D663A /* Domain.xcodeproj */,
+				B0CC920129A11FEC00FEF81C /* Services.xcodeproj */,
+				B0CC918C299FD08F00FEF81C /* Scenes.xcodeproj */,
+				B0CC91D1299FDC9300FEF81C /* Routers */,
 				B03F6C71299E05F3007D663A /* Main */,
 				B03F6C66299E04E1007D663A /* Assets.xcassets */,
 				B03F6C6B299E04E1007D663A /* Info.plist */,
@@ -182,145 +214,6 @@
 				B03F6C68299E04E1007D663A /* LaunchScreen.storyboard */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		B03F6C72299E066E007D663A /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C75299E0D93007D663A /* Models */,
-				B03F6C76299E0DA6007D663A /* UseCases */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		B03F6C73299E0676007D663A /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C9C299E3447007D663A /* Platforms */,
-				B03F6C97299E3118007D663A /* AttractionService */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		B03F6C74299E0684007D663A /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6CA8299E7746007D663A /* Root */,
-				B03F6C80299E1337007D663A /* Attractions */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		B03F6C75299E0D93007D663A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C7B299E11F0007D663A /* Coordinate.swift */,
-				B03F6C7D299E1226007D663A /* ImageResource.swift */,
-				B03F6C79299E1158007D663A /* Attraction.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B03F6C76299E0DA6007D663A /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C77299E10D3007D663A /* FetchAttractionsUseCase.swift */,
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		B03F6C7F299E1314007D663A /* Core */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		B03F6C80299E1337007D663A /* Attractions */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C83299E13FA007D663A /* AttractionsViewModelProtocol.swift */,
-				B03F6C8A299E19B8007D663A /* AttractionsViewModel.swift */,
-				B03F6C81299E1342007D663A /* AttractionsViewController.swift */,
-				B03F6CA9299E7ECD007D663A /* AttractionsViewController+Routes.swift */,
-				B03F6CAD299E8AD4007D663A /* UIComponents */,
-			);
-			path = Attractions;
-			sourceTree = "<group>";
-		};
-		B03F6C8C299E2731007D663A /* Routers */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C8F299E283E007D663A /* Router.swift */,
-				B03F6C93299E3017007D663A /* AppRouter.swift */,
-			);
-			path = Routers;
-			sourceTree = "<group>";
-		};
-		B03F6C97299E3118007D663A /* AttractionService */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C95299E30B1007D663A /* AttractionService.swift */,
-				B03F6C9A299E315A007D663A /* TaipeiTravelAttractionService */,
-			);
-			path = AttractionService;
-			sourceTree = "<group>";
-		};
-		B03F6C9A299E315A007D663A /* TaipeiTravelAttractionService */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C98299E3147007D663A /* TaipeiTravelAttractionService.swift */,
-			);
-			path = TaipeiTravelAttractionService;
-			sourceTree = "<group>";
-		};
-		B03F6C9B299E3434007D663A /* TaipeiTravelAPI */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C9D299E345D007D663A /* TaipeiTravelAPI.swift */,
-				B03F6CA1299E632B007D663A /* TaipeiTravelAPI+Attraction.swift */,
-				B03F6C9F299E61D0007D663A /* TaipeiTravelAPI+Models.swift */,
-				B03F6CA3299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift */,
-				B03F6CBB299E99AB007D663A /* BasicNetworkLoggerPlugin.swift */,
-				B03F6CBD299E9A9B007D663A /* RResult.swift */,
-			);
-			path = TaipeiTravelAPI;
-			sourceTree = "<group>";
-		};
-		B03F6C9C299E3447007D663A /* Platforms */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6C9B299E3434007D663A /* TaipeiTravelAPI */,
-			);
-			path = Platforms;
-			sourceTree = "<group>";
-		};
-		B03F6CA5299E73F9007D663A /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6CA6299E7406007D663A /* UIViewController+Embed.swift */,
-				B03F6CAB299E85AA007D663A /* Stored.swift */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
-		B03F6CA8299E7746007D663A /* Root */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6CB2299E908E007D663A /* RootViewModelProtocol.swift */,
-				B03F6CB4299E9095007D663A /* RootViewModel.swift */,
-				B03F6CB6299E909C007D663A /* RootViewController.swift */,
-				B03F6CB8299E90A5007D663A /* RootViewController+Routes.swift */,
-			);
-			path = Root;
-			sourceTree = "<group>";
-		};
-		B03F6CAD299E8AD4007D663A /* UIComponents */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6CAE299E8AE1007D663A /* AttractionCell.swift */,
-			);
-			path = UIComponents;
 			sourceTree = "<group>";
 		};
 		B03F6CC4299E9FF3007D663A /* CleanArcDesignTests */ = {
@@ -348,6 +241,50 @@
 			path = Attractions;
 			sourceTree = "<group>";
 		};
+		B03F6D25299F74CE007D663A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0CC9167299FD03700FEF81C /* Utilities.framework */,
+				B0CC9169299FD03700FEF81C /* UtilitiesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B03F6D5F299FC303007D663A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B03F6D64299FC303007D663A /* Domain.framework */,
+				B03F6D66299FC303007D663A /* DomainTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0CC918D299FD08F00FEF81C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0CC9192299FD08F00FEF81C /* Scenes.framework */,
+				B0CC9194299FD08F00FEF81C /* ScenesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0CC91D1299FDC9300FEF81C /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				B0CC91D2299FDC9300FEF81C /* AppRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		B0CC920229A11FEC00FEF81C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0CC920729A11FED00FEF81C /* Services.framework */,
+				B0CC920929A11FED00FEF81C /* ServicesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -360,6 +297,7 @@
 				B03F6C57299E04DF007D663A /* Frameworks */,
 				B03F6C58299E04DF007D663A /* Resources */,
 				606AF63A88293D3FCD5CBA39 /* [CP] Embed Pods Frameworks */,
+				B03F6D33299F7594007D663A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,11 +312,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B03F6CCB299E9FF3007D663A /* Build configuration list for PBXNativeTarget "CleanArcDesignTests" */;
 			buildPhases = (
-				66286FE400C23883729464A5 /* [CP] Check Pods Manifest.lock */,
 				B03F6CBF299E9FF3007D663A /* Sources */,
 				B03F6CC0299E9FF3007D663A /* Frameworks */,
 				B03F6CC1299E9FF3007D663A /* Resources */,
-				B99E7A2E08E16011885E62FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -420,6 +356,24 @@
 			mainGroup = B03F6C51299E04DF007D663A;
 			productRefGroup = B03F6C5B299E04DF007D663A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B03F6D5F299FC303007D663A /* Products */;
+					ProjectRef = B03F6D5E299FC303007D663A /* Domain.xcodeproj */;
+				},
+				{
+					ProductGroup = B0CC918D299FD08F00FEF81C /* Products */;
+					ProjectRef = B0CC918C299FD08F00FEF81C /* Scenes.xcodeproj */;
+				},
+				{
+					ProductGroup = B0CC920229A11FEC00FEF81C /* Products */;
+					ProjectRef = B0CC920129A11FEC00FEF81C /* Services.xcodeproj */;
+				},
+				{
+					ProductGroup = B03F6D25299F74CE007D663A /* Products */;
+					ProjectRef = B03F6D24299F74CE007D663A /* Utilities.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B03F6C59299E04DF007D663A /* CleanArcDesign */,
@@ -427,6 +381,65 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B03F6D64299FC303007D663A /* Domain.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Domain.framework;
+			remoteRef = B03F6D63299FC303007D663A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B03F6D66299FC303007D663A /* DomainTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DomainTests.xctest;
+			remoteRef = B03F6D65299FC303007D663A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0CC9167299FD03700FEF81C /* Utilities.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Utilities.framework;
+			remoteRef = B0CC9166299FD03700FEF81C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0CC9169299FD03700FEF81C /* UtilitiesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UtilitiesTests.xctest;
+			remoteRef = B0CC9168299FD03700FEF81C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0CC9192299FD08F00FEF81C /* Scenes.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Scenes.framework;
+			remoteRef = B0CC9191299FD08F00FEF81C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0CC9194299FD08F00FEF81C /* ScenesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ScenesTests.xctest;
+			remoteRef = B0CC9193299FD08F00FEF81C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0CC920729A11FED00FEF81C /* Services.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Services.framework;
+			remoteRef = B0CC920629A11FED00FEF81C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B0CC920929A11FED00FEF81C /* ServicesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ServicesTests.xctest;
+			remoteRef = B0CC920829A11FED00FEF81C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B03F6C58299E04DF007D663A /* Resources */ = {
@@ -465,28 +478,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanArcDesign/Pods-CleanArcDesign-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		66286FE400C23883729464A5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CleanArcDesignTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		931539090DC4332FFD80D011 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -509,23 +500,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B99E7A2E08E16011885E62FB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CleanArcDesignTests/Pods-CleanArcDesignTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CleanArcDesignTests/Pods-CleanArcDesignTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanArcDesignTests/Pods-CleanArcDesignTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -533,34 +507,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B03F6CAC299E85AA007D663A /* Stored.swift in Sources */,
+				B0CC91D4299FDC9300FEF81C /* AppRouter.swift in Sources */,
 				B03F6CB1299E8E9B007D663A /* MainViewController.swift in Sources */,
-				B03F6CA7299E7406007D663A /* UIViewController+Embed.swift in Sources */,
-				B03F6C7A299E1158007D663A /* Attraction.swift in Sources */,
-				B03F6C9E299E345D007D663A /* TaipeiTravelAPI.swift in Sources */,
-				B03F6C7E299E1226007D663A /* ImageResource.swift in Sources */,
-				B03F6C96299E30B1007D663A /* AttractionService.swift in Sources */,
-				B03F6CB3299E908E007D663A /* RootViewModelProtocol.swift in Sources */,
-				B03F6CA2299E632B007D663A /* TaipeiTravelAPI+Attraction.swift in Sources */,
-				B03F6CAF299E8AE1007D663A /* AttractionCell.swift in Sources */,
-				B03F6C78299E10D3007D663A /* FetchAttractionsUseCase.swift in Sources */,
 				B03F6C5E299E04DF007D663A /* AppDelegate.swift in Sources */,
-				B03F6CB9299E90A5007D663A /* RootViewController+Routes.swift in Sources */,
 				B03F6C60299E04DF007D663A /* SceneDelegate.swift in Sources */,
-				B03F6C99299E3147007D663A /* TaipeiTravelAttractionService.swift in Sources */,
-				B03F6CBC299E99AB007D663A /* BasicNetworkLoggerPlugin.swift in Sources */,
-				B03F6C84299E13FB007D663A /* AttractionsViewModelProtocol.swift in Sources */,
-				B03F6CB7299E909C007D663A /* RootViewController.swift in Sources */,
-				B03F6C7C299E11F0007D663A /* Coordinate.swift in Sources */,
-				B03F6CA0299E61D0007D663A /* TaipeiTravelAPI+Models.swift in Sources */,
-				B03F6CA4299E65FD007D663A /* TaipeiTravelAPI+Bridging.swift in Sources */,
-				B03F6CBE299E9A9B007D663A /* RResult.swift in Sources */,
-				B03F6C82299E1342007D663A /* AttractionsViewController.swift in Sources */,
-				B03F6C94299E3017007D663A /* AppRouter.swift in Sources */,
-				B03F6CAA299E7ECD007D663A /* AttractionsViewController+Routes.swift in Sources */,
-				B03F6C8B299E19B8007D663A /* AttractionsViewModel.swift in Sources */,
-				B03F6CB5299E9095007D663A /* RootViewModel.swift in Sources */,
-				B03F6C90299E283E007D663A /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,7 +723,6 @@
 		};
 		B03F6CC9299E9FF3007D663A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F647AE814BA3F02CD2C796DE /* Pods-CleanArcDesignTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -792,7 +741,6 @@
 		};
 		B03F6CCA299E9FF3007D663A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90DFF3490FCA1578F6949288 /* Pods-CleanArcDesignTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import Utilities
+import Domain
 import RxSwift
 import RxCocoa
 
-protocol AttractionsViewModelProtocol: AnyObject {
+public protocol AttractionsViewModelProtocol: AnyObject {
     
     // MARK: - Observables
     var attractions: Observable<[Attraction]?> { get }
@@ -22,8 +24,12 @@ protocol AttractionsViewModelProtocol: AnyObject {
     var dependencies: AttractionsViewModelDependencies { get }
 }
 
-struct AttractionsViewModelDependencies {
+public struct AttractionsViewModelDependencies {
     var attractionService: AttractionService
+    
+    public init(attractionService: AttractionService) {
+        self.attractionService = attractionService
+    }
 }
 
 

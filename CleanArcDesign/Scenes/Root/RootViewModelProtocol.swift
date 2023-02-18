@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-protocol RootViewModelProtocol: AnyObject {
+public protocol RootViewModelProtocol: AnyObject {
     // MARK: - Observables
     var onShowingAttractions: PublishSubject<Void> { get }
     
