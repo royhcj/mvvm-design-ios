@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Domain
 
 public protocol AttractionService {
     func fetchAttractions(pageNumber: Int, completion: @escaping (Result<[Attraction], Error>) -> Void)

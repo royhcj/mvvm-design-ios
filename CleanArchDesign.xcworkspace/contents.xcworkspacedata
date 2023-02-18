@@ -13,4 +13,7 @@
    <FileRef
       location = "group:CleanArcDesign/Utilities/Utilities.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:CleanArcDesign/Services/Services.xcodeproj">
+   </FileRef>
 </Workspace>

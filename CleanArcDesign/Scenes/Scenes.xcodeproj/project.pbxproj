@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F52C739D15866945351910A /* Pods_Scenes_Scenes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FF468786411B84135F2094 /* Pods_Scenes_Scenes.framework */; };
 		A20EAED28FD6426D254D14C9 /* Pods_Scenes_ScenesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D902C73FB19E1A60C157340 /* Pods_Scenes_ScenesTests.framework */; };
 		B0CC917D299FD08F00FEF81C /* Scenes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CC9174299FD08E00FEF81C /* Scenes.framework */; };
 		B0CC9182299FD08F00FEF81C /* ScenesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC9181299FD08F00FEF81C /* ScenesTests.swift */; };
@@ -22,14 +23,6 @@
 		B0CC91A9299FD1FE00FEF81C /* RootViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC91A0299FD1FE00FEF81C /* RootViewModelProtocol.swift */; };
 		B0CC91B4299FD41E00FEF81C /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CC91B3299FD41E00FEF81C /* Domain.framework */; };
 		B0CC91B5299FD41E00FEF81C /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0CC91B3299FD41E00FEF81C /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B0CC91C5299FD73700FEF81C /* TaipeiTravelAttractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC91BB299FD73700FEF81C /* TaipeiTravelAttractionService.swift */; };
-		B0CC91C6299FD73700FEF81C /* TaipeiTravelAPI+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC91BE299FD73700FEF81C /* TaipeiTravelAPI+Models.swift */; };
-		B0CC91C7299FD73700FEF81C /* RResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC91BF299FD73700FEF81C /* RResult.swift */; };
-		B0CC91C8299FD73700FEF81C /* BasicNetworkLoggerPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC91C0299FD73700FEF81C /* BasicNetworkLoggerPlugin.swift */; };
-		B0CC91C9299FD73700FEF81C /* TaipeiTravelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC91C1299FD73700FEF81C /* TaipeiTravelAPI.swift */; };
-		B0CC91CA299FD73700FEF81C /* TaipeiTravelAPI+Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC91C2299FD73700FEF81C /* TaipeiTravelAPI+Attraction.swift */; };
-		B0CC91CB299FD73700FEF81C /* TaipeiTravelAPI+Bridging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC91C3299FD73700FEF81C /* TaipeiTravelAPI+Bridging.swift */; };
-		BF512E654A84D35750E2513C /* Pods_Scenes_Scenes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628EAEAD8283C45052944C05 /* Pods_Scenes_Scenes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +54,8 @@
 		1D902C73FB19E1A60C157340 /* Pods_Scenes_ScenesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scenes_ScenesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB6C7AADB5CFA1DEE846A91 /* Pods-Scenes-Scenes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scenes-Scenes.release.xcconfig"; path = "Target Support Files/Pods-Scenes-Scenes/Pods-Scenes-Scenes.release.xcconfig"; sourceTree = "<group>"; };
 		447B8774F5DDFA570A47DC77 /* Pods-Scenes-Scenes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scenes-Scenes.debug.xcconfig"; path = "Target Support Files/Pods-Scenes-Scenes/Pods-Scenes-Scenes.debug.xcconfig"; sourceTree = "<group>"; };
-		628EAEAD8283C45052944C05 /* Pods_Scenes_Scenes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scenes_Scenes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DDB2B8CC67EC3A53C0B191 /* Pods-Scenes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scenes.release.xcconfig"; path = "Target Support Files/Pods-Scenes/Pods-Scenes.release.xcconfig"; sourceTree = "<group>"; };
+		A7FF468786411B84135F2094 /* Pods_Scenes_Scenes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scenes_Scenes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CC9174299FD08E00FEF81C /* Scenes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scenes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CC9177299FD08E00FEF81C /* Scenes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scenes.h; sourceTree = "<group>"; };
 		B0CC917C299FD08F00FEF81C /* ScenesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScenesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,13 +70,6 @@
 		B0CC919F299FD1FE00FEF81C /* RootViewController+Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RootViewController+Routes.swift"; sourceTree = "<group>"; };
 		B0CC91A0299FD1FE00FEF81C /* RootViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModelProtocol.swift; sourceTree = "<group>"; };
 		B0CC91B3299FD41E00FEF81C /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0CC91BB299FD73700FEF81C /* TaipeiTravelAttractionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiTravelAttractionService.swift; sourceTree = "<group>"; };
-		B0CC91BE299FD73700FEF81C /* TaipeiTravelAPI+Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaipeiTravelAPI+Models.swift"; sourceTree = "<group>"; };
-		B0CC91BF299FD73700FEF81C /* RResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RResult.swift; sourceTree = "<group>"; };
-		B0CC91C0299FD73700FEF81C /* BasicNetworkLoggerPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicNetworkLoggerPlugin.swift; sourceTree = "<group>"; };
-		B0CC91C1299FD73700FEF81C /* TaipeiTravelAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiTravelAPI.swift; sourceTree = "<group>"; };
-		B0CC91C2299FD73700FEF81C /* TaipeiTravelAPI+Attraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaipeiTravelAPI+Attraction.swift"; sourceTree = "<group>"; };
-		B0CC91C3299FD73700FEF81C /* TaipeiTravelAPI+Bridging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaipeiTravelAPI+Bridging.swift"; sourceTree = "<group>"; };
 		C912013B034325E89B0A1CDA /* Pods-Scenes-ScenesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scenes-ScenesTests.release.xcconfig"; path = "Target Support Files/Pods-Scenes-ScenesTests/Pods-Scenes-ScenesTests.release.xcconfig"; sourceTree = "<group>"; };
 		E06639417E9D13C7BF2D4308 /* Pods-Scenes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scenes.debug.xcconfig"; path = "Target Support Files/Pods-Scenes/Pods-Scenes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0CC91B4299FD41E00FEF81C /* Domain.framework in Frameworks */,
-				BF512E654A84D35750E2513C /* Pods_Scenes_Scenes.framework in Frameworks */,
+				3F52C739D15866945351910A /* Pods_Scenes_Scenes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +99,6 @@
 		B0CC916A299FD08E00FEF81C = {
 			isa = PBXGroup;
 			children = (
-				B0CC91B7299FD73700FEF81C /* Services */,
 				B0CC919C299FD1FE00FEF81C /* Root */,
 				B0CC9195299FD1FE00FEF81C /* Attractions */,
 				B0CC9180299FD08F00FEF81C /* UnitTest */,
@@ -180,52 +165,6 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		B0CC91B7299FD73700FEF81C /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				B0CC91B8299FD73700FEF81C /* AttractionService */,
-				B0CC91BC299FD73700FEF81C /* Platforms */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		B0CC91B8299FD73700FEF81C /* AttractionService */ = {
-			isa = PBXGroup;
-			children = (
-				B0CC91BA299FD73700FEF81C /* TaipeiTravelAttractionService */,
-			);
-			path = AttractionService;
-			sourceTree = "<group>";
-		};
-		B0CC91BA299FD73700FEF81C /* TaipeiTravelAttractionService */ = {
-			isa = PBXGroup;
-			children = (
-				B0CC91BB299FD73700FEF81C /* TaipeiTravelAttractionService.swift */,
-			);
-			path = TaipeiTravelAttractionService;
-			sourceTree = "<group>";
-		};
-		B0CC91BC299FD73700FEF81C /* Platforms */ = {
-			isa = PBXGroup;
-			children = (
-				B0CC91BD299FD73700FEF81C /* TaipeiTravelAPI */,
-			);
-			path = Platforms;
-			sourceTree = "<group>";
-		};
-		B0CC91BD299FD73700FEF81C /* TaipeiTravelAPI */ = {
-			isa = PBXGroup;
-			children = (
-				B0CC91BE299FD73700FEF81C /* TaipeiTravelAPI+Models.swift */,
-				B0CC91BF299FD73700FEF81C /* RResult.swift */,
-				B0CC91C0299FD73700FEF81C /* BasicNetworkLoggerPlugin.swift */,
-				B0CC91C1299FD73700FEF81C /* TaipeiTravelAPI.swift */,
-				B0CC91C2299FD73700FEF81C /* TaipeiTravelAPI+Attraction.swift */,
-				B0CC91C3299FD73700FEF81C /* TaipeiTravelAPI+Bridging.swift */,
-			);
-			path = TaipeiTravelAPI;
-			sourceTree = "<group>";
-		};
 		E1911B03CF41D7AF51FC8052 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,8 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				B0CC91B3299FD41E00FEF81C /* Domain.framework */,
-				628EAEAD8283C45052944C05 /* Pods_Scenes_Scenes.framework */,
 				1D902C73FB19E1A60C157340 /* Pods_Scenes_ScenesTests.framework */,
+				A7FF468786411B84135F2094 /* Pods_Scenes_Scenes.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -428,20 +367,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0CC91A5299FD1FE00FEF81C /* AttractionCell.swift in Sources */,
-				B0CC91CB299FD73700FEF81C /* TaipeiTravelAPI+Bridging.swift in Sources */,
-				B0CC91C9299FD73700FEF81C /* TaipeiTravelAPI.swift in Sources */,
 				B0CC91A7299FD1FE00FEF81C /* RootViewModel.swift in Sources */,
 				B0CC91A8299FD1FE00FEF81C /* RootViewController+Routes.swift in Sources */,
 				B0CC91A9299FD1FE00FEF81C /* RootViewModelProtocol.swift in Sources */,
-				B0CC91C8299FD73700FEF81C /* BasicNetworkLoggerPlugin.swift in Sources */,
-				B0CC91CA299FD73700FEF81C /* TaipeiTravelAPI+Attraction.swift in Sources */,
 				B0CC91A1299FD1FE00FEF81C /* AttractionsViewController.swift in Sources */,
 				B0CC91A6299FD1FE00FEF81C /* RootViewController.swift in Sources */,
-				B0CC91C7299FD73700FEF81C /* RResult.swift in Sources */,
-				B0CC91C5299FD73700FEF81C /* TaipeiTravelAttractionService.swift in Sources */,
 				B0CC91A4299FD1FE00FEF81C /* AttractionsViewController+Routes.swift in Sources */,
 				B0CC91A2299FD1FE00FEF81C /* AttractionsViewModelProtocol.swift in Sources */,
-				B0CC91C6299FD73700FEF81C /* TaipeiTravelAPI+Models.swift in Sources */,
 				B0CC91A3299FD1FE00FEF81C /* AttractionsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,7 +579,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D61D11D1300498A2B328934 /* Pods-Scenes-ScenesTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -664,7 +595,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C912013B034325E89B0A1CDA /* Pods-Scenes-ScenesTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
