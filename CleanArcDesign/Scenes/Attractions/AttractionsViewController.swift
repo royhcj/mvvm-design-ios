@@ -14,11 +14,7 @@ import RxCocoa
 import RxOptional
 import RxViewController
 
-public class AttractionsViewController: UIViewController,
-                                        RoutableViewController {
-    public var displayContext: UIDisplayContext?
-    
-    let viewModel: AttractionsViewModelProtocol
+public class AttractionsViewController: MvvmViewController<AttractionsViewModelProtocol> {
     let router: (RoutableViewController, Routes) -> Void
     
     private var bag = DisposeBag()
@@ -29,9 +25,8 @@ public class AttractionsViewController: UIViewController,
     // MARK: - Object/View lifecycle
     public init(viewModel: AttractionsViewModelProtocol,
                 router: @escaping (RoutableViewController, Routes) -> Void) {
-        self.viewModel = viewModel
         self.router = router
-        super.init(nibName: nil, bundle: nil)
+        super.init(viewModel: viewModel)
     
         createLayout()
         bindViewModel()

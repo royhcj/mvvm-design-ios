@@ -12,10 +12,7 @@ import RxSwift
 import RxCocoa
 import RxOptional
 
-public class RootViewController: UIViewController, RoutableViewController {
-    public var displayContext: UIDisplayContext?
-    
-    var viewModel: RootViewModelProtocol
+public class RootViewController: MvvmViewController<RootViewModelProtocol> {
     var router: (RoutableViewController, Routes) -> Void
     
     private var bag = DisposeBag()
@@ -23,9 +20,8 @@ public class RootViewController: UIViewController, RoutableViewController {
     // MARK: - Object/View lifecycle
     public init(viewModel: RootViewModelProtocol,
                 router: @escaping (RoutableViewController, Routes) -> Void) {
-        self.viewModel = viewModel
         self.router = router
-        super.init(nibName: nil, bundle: nil)
+        super.init(viewModel: viewModel)
     
         createLayout()
         bindViewModel()

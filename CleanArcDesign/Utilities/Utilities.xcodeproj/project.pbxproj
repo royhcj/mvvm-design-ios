@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		430C3877611A6931A1E1269D /* Pods_Utilities_Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA6204A826EBB449F9DA711 /* Pods_Utilities_Utilities.framework */; };
+		B03D8B322A3B0C6500F1FEC0 /* MvvmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03D8B312A3B0C6500F1FEC0 /* MvvmViewController.swift */; };
 		B03F6D1A299F74CE007D663A /* UIViewController+Embed+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6D19299F74CE007D663A /* UIViewController+Embed+Tests.swift */; };
 		B03F6D1B299F74CE007D663A /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B03F6D0F299F74CE007D663A /* Utilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B03F6D2F299F74E1007D663A /* Stored.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6D2E299F74E1007D663A /* Stored.swift */; };
@@ -34,6 +35,7 @@
 		6EA6204A826EBB449F9DA711 /* Pods_Utilities_Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Utilities_Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		763D180D5EACFD0A335C0888 /* Pods-Utilities-Utilities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utilities-Utilities.debug.xcconfig"; path = "Target Support Files/Pods-Utilities-Utilities/Pods-Utilities-Utilities.debug.xcconfig"; sourceTree = "<group>"; };
 		AE65A2E02DABA2D2A47AD54D /* Pods-Utilities-UtilitiesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Utilities-UtilitiesTests.release.xcconfig"; path = "Target Support Files/Pods-Utilities-UtilitiesTests/Pods-Utilities-UtilitiesTests.release.xcconfig"; sourceTree = "<group>"; };
+		B03D8B312A3B0C6500F1FEC0 /* MvvmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MvvmViewController.swift; sourceTree = "<group>"; };
 		B03F6D0F299F74CE007D663A /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
 		B03F6D19299F74CE007D663A /* UIViewController+Embed+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Embed+Tests.swift"; sourceTree = "<group>"; };
 		B03F6D2D299F74E1007D663A /* UIViewController+Embed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Embed.swift"; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		B03F6D02299F74CE007D663A = {
 			isa = PBXGroup;
 			children = (
+				B03D8B312A3B0C6500F1FEC0 /* MvvmViewController.swift */,
 				B03F6D2D299F74E1007D663A /* UIViewController+Embed.swift */,
 				B03F6D2E299F74E1007D663A /* Stored.swift */,
 				B0CC91D6299FDD0900FEF81C /* Router.swift */,
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B03D8B322A3B0C6500F1FEC0 /* MvvmViewController.swift in Sources */,
 				B03F6D30299F74E1007D663A /* UIViewController+Embed.swift in Sources */,
 				B0CC91D7299FDD0900FEF81C /* Router.swift in Sources */,
 				B03F6D2F299F74E1007D663A /* Stored.swift in Sources */,
