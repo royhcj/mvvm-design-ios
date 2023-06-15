@@ -18,7 +18,7 @@ final class UIViewController·Embed·Tests: XCTestCase {
         
     }
 
-    func testViewController_whenEmbeddingChildWithoutSpecifyingView_shouldEmbedChild() throws {
+    func test·ViewController一when·embedding·child·without·specifying·view一should·embed·child() throws {
         // Given
         let parent = UIViewController()
         let child = ViewControllerSpy()
@@ -32,7 +32,7 @@ final class UIViewController·Embed·Tests: XCTestCase {
         XCTAssert(child.hasCalledDidMoveToParent, "Child should move to parent.")
     }
     
-    func testViewController_whenEmbeddingChildOverSpecifiedView_shouldEmbedChild() throws {
+    func test·ViewController一when·embedding·child·over·a·specified·view一should·embed·child() throws {
         // Given
         let parent = UIViewController()
         let child = ViewControllerSpy()
@@ -50,7 +50,7 @@ final class UIViewController·Embed·Tests: XCTestCase {
         XCTAssert(child.hasCalledDidMoveToParent, "Child should move to parent.")
     }
     
-    func testViewController_whenUnembedFromParent_shouldUnembed() throws {
+    func test·ViewController一when·unembed·from·parent一should·unembed() throws {
         // Given
         let parent = UIViewController()
         let child = ViewControllerSpy()
