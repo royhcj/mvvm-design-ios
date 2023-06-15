@@ -23,7 +23,7 @@ public class AttractionsViewController: UIViewController,
     
     private var bag = DisposeBag()
     
-    private var tableView: UITableView!
+    internal var tableView: UITableView!
     
     
     // MARK: - Object/View lifecycle

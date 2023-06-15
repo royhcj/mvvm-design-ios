@@ -48,7 +48,7 @@ class AppCoordinator {
                          displayContext: displayContext)
             
         case .anyToAttractions:
-            let dependencies = AttractionsViewModelDependencies(
+            let dependencies = AttractionsViewModel.AttractionsViewModelDependencies(
                 attractionService: dependencies.attractionService)
             
             let viewModel = AttractionsViewModel(dependencies: dependencies)

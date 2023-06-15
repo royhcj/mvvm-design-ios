@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A20EAED28FD6426D254D14C9 /* Pods_Scenes_ScenesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D902C73FB19E1A60C157340 /* Pods_Scenes_ScenesTests.framework */; };
 		B04E2CB129A1B50100A42819 /* AttractionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04E2CB029A1B50100A42819 /* AttractionRouter.swift */; };
+		B04E2CBE29A2062000A42819 /* AttractionsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04E2CBD29A2062000A42819 /* AttractionsViewControllerTests.swift */; };
 		B0CC917D299FD08F00FEF81C /* Scenes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CC9174299FD08E00FEF81C /* Scenes.framework */; };
 		B0CC9182299FD08F00FEF81C /* ScenesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC9181299FD08F00FEF81C /* ScenesTests.swift */; };
 		B0CC9183299FD08F00FEF81C /* Scenes.h in Headers */ = {isa = PBXBuildFile; fileRef = B0CC9177299FD08E00FEF81C /* Scenes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -58,6 +59,7 @@
 		447B8774F5DDFA570A47DC77 /* Pods-Scenes-Scenes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scenes-Scenes.debug.xcconfig"; path = "Target Support Files/Pods-Scenes-Scenes/Pods-Scenes-Scenes.debug.xcconfig"; sourceTree = "<group>"; };
 		89DDB2B8CC67EC3A53C0B191 /* Pods-Scenes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scenes.release.xcconfig"; path = "Target Support Files/Pods-Scenes/Pods-Scenes.release.xcconfig"; sourceTree = "<group>"; };
 		B04E2CB029A1B50100A42819 /* AttractionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionRouter.swift; sourceTree = "<group>"; };
+		B04E2CBD29A2062000A42819 /* AttractionsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewControllerTests.swift; sourceTree = "<group>"; };
 		B0CC9174299FD08E00FEF81C /* Scenes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scenes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CC9177299FD08E00FEF81C /* Scenes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scenes.h; sourceTree = "<group>"; };
 		B0CC917C299FD08F00FEF81C /* ScenesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScenesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B04E2CBC29A205D700A42819 /* Attractions */ = {
+			isa = PBXGroup;
+			children = (
+				B04E2CBD29A2062000A42819 /* AttractionsViewControllerTests.swift */,
+			);
+			path = Attractions;
+			sourceTree = "<group>";
+		};
 		B0CC916A299FD08E00FEF81C = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 		B0CC9180299FD08F00FEF81C /* UnitTest */ = {
 			isa = PBXGroup;
 			children = (
+				B04E2CBC29A205D700A42819 /* Attractions */,
 				B0CC9181299FD08F00FEF81C /* ScenesTests.swift */,
 			);
 			path = UnitTest;
@@ -387,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0CC9182299FD08F00FEF81C /* ScenesTests.swift in Sources */,
+				B04E2CBE29A2062000A42819 /* AttractionsViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

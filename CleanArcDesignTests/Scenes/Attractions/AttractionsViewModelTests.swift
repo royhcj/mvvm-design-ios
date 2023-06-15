@@ -9,6 +9,8 @@
 import XCTest
 import RxSwift
 import RxCocoa
+import Domain
+import Scenes
 
 
 final class AttractionsViewModelTests: XCTestCase {
