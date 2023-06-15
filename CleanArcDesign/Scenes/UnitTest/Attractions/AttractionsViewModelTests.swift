@@ -9,6 +9,8 @@
 import XCTest
 import RxSwift
 import RxCocoa
+import Domain
+import Scenes
 
 
 final class AttractionsViewModelTests: XCTestCase {
@@ -31,7 +33,7 @@ final class AttractionsViewModelTests: XCTestCase {
         bag = nil
     }
     
-    func testAttractionsViewModel_givenValidRemoteAttractions_whenFetchAttractions_shouldOutputAttractions() {
+    func test·AttractionsViewModel·given·valid·remoteAttractions一when·fetch·attractions一should·output·attractions() {
         // Given
         attractionService.fetchAttractionsResponse = .success(AttractionServiceMock.mockAttractions)
         
@@ -57,29 +59,29 @@ final class AttractionsViewModelTests: XCTestCase {
         wait(for: [expectation], timeout: 1)
     }
     
-    func testAttractionsViewModel_givenValidRemoteAttractions_whenFetchAttractions_shouldOutputBusyAndNotBusy() {
+    func test·AttractionsViewModel·given·valid·remote·attractions一when·fetch·attractions一should·output·busy·and·not·busy() {
         // Given
         attractionService.fetchAttractionsResponse = .success(AttractionServiceMock.mockAttractions)
         
         // When
         let expectationBusy = XCTestExpectation(description: "Expected Busy")
         let expectationNotBusy = XCTestExpectation(description: "Expected Not Busy")
-        var expectedValues = [false, true, false]
+        let expectedValues = [false, true, false]
+        var nextIndex = 0
         
         sut.busyFetching
             .subscribe(onNext: { busy in
-                guard busy == expectedValues[0] else {
+                guard busy == expectedValues[nextIndex] else {
                     XCTFail("Unexpected busy state")
                     return
                 }
                 
-                if expectedValues.count == 2 {
+                if nextIndex == 1 {
                     expectationBusy.fulfill()
-                } else if expectedValues.count == 1 {
+                } else if nextIndex == 2 {
                     expectationNotBusy.fulfill()
                 }
-                
-                expectedValues.removeFirst()
+                nextIndex += 1
             }).disposed(by: bag)
         
         sut.fetchMoreAttractions(startsOver: true)
@@ -88,7 +90,7 @@ final class AttractionsViewModelTests: XCTestCase {
         wait(for: [expectationBusy, expectationNotBusy], timeout: 10)
     }
     
-    func testAttractionsViewModel_givenInvalidRemoteAttractions_whenFetchAttractions_shouldOutputBusyAndNotBusy() {
+    func testAttractionsViewModel·given·invalid·remote·attractions一when·fetch·attractions一should·output·busy·and·not·busy() {
         // Given
         attractionService.fetchAttractionsResponse = .failure(AttractionServiceError.underlyingError)
         

@@ -19,17 +19,6 @@ public protocol AttractionsViewModelProtocol: AnyObject {
     
     // MARK: - Actions
     func fetchMoreAttractions(startsOver: Bool)
-    
-    // MARK: - Dependencies
-    var dependencies: AttractionsViewModelDependencies { get }
-}
-
-public struct AttractionsViewModelDependencies {
-    var attractionService: AttractionService
-    
-    public init(attractionService: AttractionService) {
-        self.attractionService = attractionService
-    }
 }
 
 

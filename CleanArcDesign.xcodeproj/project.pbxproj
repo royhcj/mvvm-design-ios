@@ -14,7 +14,6 @@
 		B03F6C6A299E04E1007D663A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B03F6C68299E04E1007D663A /* LaunchScreen.storyboard */; };
 		B03F6CB1299E8E9B007D663A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CB0299E8E9B007D663A /* MainViewController.swift */; };
 		B03F6CC6299E9FF3007D663A /* CleanArcDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CC5299E9FF3007D663A /* CleanArcDesignTests.swift */; };
-		B03F6CCF299EA028007D663A /* AttractionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03F6CCE299EA028007D663A /* AttractionsViewModelTests.swift */; };
 		B03F6D7C299FC498007D663A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03F6D64299FC303007D663A /* Domain.framework */; };
 		B03F6D7D299FC498007D663A /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B03F6D64299FC303007D663A /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B0CC91D4299FDC9300FEF81C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CC91D2299FDC9300FEF81C /* AppCoordinator.swift */; };
@@ -122,7 +121,6 @@
 		B03F6CB0299E8E9B007D663A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B03F6CC3299E9FF3007D663A /* CleanArcDesignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArcDesignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B03F6CC5299E9FF3007D663A /* CleanArcDesignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanArcDesignTests.swift; sourceTree = "<group>"; };
-		B03F6CCE299EA028007D663A /* AttractionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionsViewModelTests.swift; sourceTree = "<group>"; };
 		B03F6D24299F74CE007D663A /* Utilities.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Utilities.xcodeproj; path = Utilities/Utilities.xcodeproj; sourceTree = "<group>"; };
 		B03F6D5E299FC303007D663A /* Domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Domain.xcodeproj; path = Domain/Domain.xcodeproj; sourceTree = "<group>"; };
 		B0CC918C299FD08F00FEF81C /* Scenes.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Scenes.xcodeproj; path = Scenes/Scenes.xcodeproj; sourceTree = "<group>"; };
@@ -219,26 +217,9 @@
 		B03F6CC4299E9FF3007D663A /* CleanArcDesignTests */ = {
 			isa = PBXGroup;
 			children = (
-				B03F6CCC299EA006007D663A /* Scenes */,
 				B03F6CC5299E9FF3007D663A /* CleanArcDesignTests.swift */,
 			);
 			path = CleanArcDesignTests;
-			sourceTree = "<group>";
-		};
-		B03F6CCC299EA006007D663A /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6CCD299EA00D007D663A /* Attractions */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		B03F6CCD299EA00D007D663A /* Attractions */ = {
-			isa = PBXGroup;
-			children = (
-				B03F6CCE299EA028007D663A /* AttractionsViewModelTests.swift */,
-			);
-			path = Attractions;
 			sourceTree = "<group>";
 		};
 		B03F6D25299F74CE007D663A /* Products */ = {
@@ -519,7 +500,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B03F6CC6299E9FF3007D663A /* CleanArcDesignTests.swift in Sources */,
-				B03F6CCF299EA028007D663A /* AttractionsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

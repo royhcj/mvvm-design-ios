@@ -24,12 +24,13 @@ class MainViewController: UIViewController, RoutableViewController {
         super.init(nibName: nibName, bundle: bundle)
         
         setupView()
+        
+        coordinator.route(.anyToRoot, from: self)
     }
     
     private func setupView() {
         view.backgroundColor = .gray
         
-        coordinator.route(.anyToRoot, from: self)
     }
     
     

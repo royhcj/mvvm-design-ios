@@ -15,8 +15,8 @@ public class AttractionCell: UITableViewCell {
     public static let cellIdentifier: String = "AttractionCell"
     
     private var photoImageView: UIImageView!
-    private var titleLabel: UILabel!
-    private var introductionLabel: UILabel!
+    @objc private var titleLabel: UILabel!
+    @objc private var introductionLabel: UILabel!
     
     // MARK: - Object lifecycle
     required init?(coder: NSCoder) {
