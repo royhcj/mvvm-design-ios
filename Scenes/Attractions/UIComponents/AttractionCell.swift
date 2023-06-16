@@ -34,7 +34,7 @@ public class AttractionCell: UITableViewCell {
         
         let containerView: UIView = {
             let container = UIView()
-            container.backgroundColor = .init(red: 0.99, green: 0.92, blue: 0.75, alpha: 1)
+            container.backgroundColor = .init(red: 1, green: 0.95, blue: 0.9, alpha: 1)
             container.layer.cornerRadius = 10
             container.layer.shadowRadius = 5
             container.layer.shadowColor = UIColor.black.cgColor
@@ -103,7 +103,8 @@ public class AttractionCell: UITableViewCell {
         }())
         
         introductionLabel = UILabel()
-        introductionLabel.font = UIFont.systemFont(ofSize: 13)
+        introductionLabel.font = UIFont.systemFont(ofSize: 14)
+        introductionLabel.textColor = .darkGray
         introductionLabel.numberOfLines = 2
         vstack.addArrangedSubview(introductionLabel)
     }

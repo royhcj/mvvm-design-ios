@@ -39,7 +39,7 @@ public class AttractionDetailViewController: MvvmViewController<AttractionDetail
     private func createLayout() {
         title = "Attraction Detail"
         
-        view.backgroundColor = .systemYellow
+        view.backgroundColor = .systemBlue
         
         let vstack: UIStackView = {
             let stack = UIStackView()
@@ -62,11 +62,20 @@ public class AttractionDetailViewController: MvvmViewController<AttractionDetail
             return imageView
         }()
         
+        let titleContainer: UIView = {
+            let container = UIView()
+            vstack.addArrangedSubview(container)
+            return container
+        }()
+        
         titleLabel = {
             let label = UILabel()
             label.font = .systemFont(ofSize: 18)
-            label.textColor = .darkGray
-            vstack.addArrangedSubview(label)
+            label.textColor = .white
+            titleContainer.addSubview(label)
+            label.snp.makeConstraints {
+                $0.edges.equalToSuperview().inset(20)
+            }
             return label
         }()
         
