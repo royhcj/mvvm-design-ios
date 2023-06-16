@@ -30,7 +30,6 @@ public class AttractionsViewController: MvvmViewController<AttractionsViewModelP
         createLayout()
         bindViewModel()
         
-        viewModel.fetchMoreAttractions(startsOver: true)
     }
     
     required init?(coder: NSCoder) {
@@ -62,17 +61,16 @@ public class AttractionsViewController: MvvmViewController<AttractionsViewModelP
                 cell.configure(with: attraction)
             }.disposed(by: bag)
         
-        /* TODO: rx.viewWillAppear not working when testing. Fix later.
-        rx.viewWillAppear.take(1)
+        rx.methodInvoked(#selector(viewWillAppear))
+            .take(1)
             .subscribe(onNext: { [weak viewModel] _ in
                 viewModel?.fetchMoreAttractions(startsOver: true)
             }).disposed(by: bag)
-         */
         
         tableView.rx.modelSelected(Attraction.self)
             .subscribe(onNext: { [weak self] attraction in
                 guard let self = self else { return }
-                self.router(self, .showAttraction(id: attraction.id))
+                self.router(self, .showAttraction(attraction))
             }).disposed(by: bag)
     }
 }

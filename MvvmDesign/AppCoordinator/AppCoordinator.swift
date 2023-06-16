@@ -48,7 +48,7 @@ class AppCoordinator {
                          displayContext: displayContext)
             
         case .anyToAttractions:
-            let dependencies = AttractionsViewModel.AttractionsViewModelDependencies(
+            let dependencies = AttractionsViewModel.Dependencies(
                 attractionService: dependencies.attractionService)
             
             let viewModel = AttractionsViewModel(dependencies: dependencies)
@@ -57,8 +57,8 @@ class AppCoordinator {
                 viewModel: viewModel,
                 router: { [weak self] source, route in
                     switch route {
-                    case .showAttraction(let id):
-                        self?.route(Routes.anyToAttraction(id: id), from: source)
+                    case .showAttraction(let attraction):
+                        self?.route(Routes.anyToAttraction(attraction: attraction), from: source)
                     }
                 })
             
@@ -67,9 +67,26 @@ class AppCoordinator {
             return .show(target: viewController,
                          displayContext: displayContext)
             
-        case .anyToAttraction(let id):
-            print(id)
-            return .custom
+        case .anyToAttraction(let attraction):
+            let dependencies = AttractionDetailViewModel.Dependencies(
+                attractionService: dependencies.attractionService)
+            
+            let viewModel = AttractionDetailViewModel(dependencies: dependencies,
+                                                      attraction: attraction)
+            
+            let viewController = AttractionDetailViewController(
+                viewModel: viewModel) { source, route in
+                    switch route {
+                    case .back:
+                        source.displayContext?.undisplay(source)
+                    }
+                }
+            
+            let displayContext = UIDisplayContext(sourceViewController: source,
+                                                  method: .present(animated: true, presentationStyle: .formSheet))
+            
+            return .show(target: viewController,
+                         displayContext: displayContext)
         }
     }
     
@@ -83,6 +100,6 @@ extension AppCoordinator {
     enum Routes {
         case anyToRoot
         case anyToAttractions
-        case anyToAttraction(id: Int)
+        case anyToAttraction(attraction: Attraction)
     }
 }

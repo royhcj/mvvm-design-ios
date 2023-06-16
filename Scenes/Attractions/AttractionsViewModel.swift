@@ -42,14 +42,14 @@ public class AttractionsViewModel: AttractionsViewModelProtocol {
     }
     
     // MARK: - Setup
-    public init(dependencies: AttractionsViewModelDependencies) {
+    public init(dependencies: Dependencies) {
         self.dependencies = dependencies
     }
     
     // MARK: - Dependencies
-    public var dependencies: AttractionsViewModelDependencies
+    public var dependencies: Dependencies
     
-    public struct AttractionsViewModelDependencies {
+    public struct Dependencies {
         var attractionService: AttractionService
         
         public init(attractionService: AttractionService) {

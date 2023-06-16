@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B094D9AF2A3C432500B844F4 /* AttractionDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094D9AE2A3C432500B844F4 /* AttractionDetailViewModelProtocol.swift */; };
+		B094D9B12A3C434300B844F4 /* AttractionDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094D9B02A3C434300B844F4 /* AttractionDetailViewModel.swift */; };
+		B094D9B32A3C434A00B844F4 /* AttractionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094D9B22A3C434A00B844F4 /* AttractionDetailViewController.swift */; };
+		B094D9B52A3C436600B844F4 /* AttractionDetailViewController+Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B094D9B42A3C436600B844F4 /* AttractionDetailViewController+Routes.swift */; };
 		B0C0C6FD2A3BFDAF00EAD00D /* Scenes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C0C6F42A3BFDAF00EAD00D /* Scenes.framework */; };
 		B0C0C7032A3BFDAF00EAD00D /* Scenes.h in Headers */ = {isa = PBXBuildFile; fileRef = B0C0C6F72A3BFDAF00EAD00D /* Scenes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0C0C7222A3BFDFF00EAD00D /* AttractionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0C7162A3BFDFF00EAD00D /* AttractionsViewController.swift */; };
 		B0C0C7232A3BFDFF00EAD00D /* AttractionsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0C7172A3BFDFF00EAD00D /* AttractionsViewModelProtocol.swift */; };
 		B0C0C7242A3BFDFF00EAD00D /* AttractionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0C7182A3BFDFF00EAD00D /* AttractionsViewModel.swift */; };
 		B0C0C7252A3BFDFF00EAD00D /* AttractionsViewController+Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0C7192A3BFDFF00EAD00D /* AttractionsViewController+Routes.swift */; };
-		B0C0C7262A3BFDFF00EAD00D /* AttractionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0C71A2A3BFDFF00EAD00D /* AttractionRouter.swift */; };
 		B0C0C7272A3BFDFF00EAD00D /* AttractionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0C71C2A3BFDFF00EAD00D /* AttractionCell.swift */; };
 		B0C0C7282A3BFDFF00EAD00D /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0C71E2A3BFDFF00EAD00D /* RootViewController.swift */; };
 		B0C0C7292A3BFDFF00EAD00D /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C0C71F2A3BFDFF00EAD00D /* RootViewModel.swift */; };
@@ -47,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B094D9AE2A3C432500B844F4 /* AttractionDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		B094D9B02A3C434300B844F4 /* AttractionDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionDetailViewModel.swift; sourceTree = "<group>"; };
+		B094D9B22A3C434A00B844F4 /* AttractionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionDetailViewController.swift; sourceTree = "<group>"; };
+		B094D9B42A3C436600B844F4 /* AttractionDetailViewController+Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttractionDetailViewController+Routes.swift"; sourceTree = "<group>"; };
 		B0C0C6F42A3BFDAF00EAD00D /* Scenes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scenes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C0C6F72A3BFDAF00EAD00D /* Scenes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scenes.h; sourceTree = "<group>"; };
 		B0C0C6FC2A3BFDAF00EAD00D /* ScenesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScenesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +61,6 @@
 		B0C0C7172A3BFDFF00EAD00D /* AttractionsViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionsViewModelProtocol.swift; sourceTree = "<group>"; };
 		B0C0C7182A3BFDFF00EAD00D /* AttractionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionsViewModel.swift; sourceTree = "<group>"; };
 		B0C0C7192A3BFDFF00EAD00D /* AttractionsViewController+Routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AttractionsViewController+Routes.swift"; sourceTree = "<group>"; };
-		B0C0C71A2A3BFDFF00EAD00D /* AttractionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionRouter.swift; sourceTree = "<group>"; };
 		B0C0C71C2A3BFDFF00EAD00D /* AttractionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttractionCell.swift; sourceTree = "<group>"; };
 		B0C0C71E2A3BFDFF00EAD00D /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		B0C0C71F2A3BFDFF00EAD00D /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
@@ -99,12 +105,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B094D9AB2A3C3C9300B844F4 /* AttractionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B094D9AE2A3C432500B844F4 /* AttractionDetailViewModelProtocol.swift */,
+				B094D9B02A3C434300B844F4 /* AttractionDetailViewModel.swift */,
+				B094D9B22A3C434A00B844F4 /* AttractionDetailViewController.swift */,
+				B094D9B42A3C436600B844F4 /* AttractionDetailViewController+Routes.swift */,
+			);
+			path = AttractionDetail;
+			sourceTree = "<group>";
+		};
 		B0C0C6EA2A3BFDAF00EAD00D = {
 			isa = PBXGroup;
 			children = (
 				B0C0C6F72A3BFDAF00EAD00D /* Scenes.h */,
 				B0C0C71D2A3BFDFF00EAD00D /* Root */,
 				B0C0C7152A3BFDFF00EAD00D /* Attractions */,
+				B094D9AB2A3C3C9300B844F4 /* AttractionDetail */,
 				B0C0C72C2A3BFE0E00EAD00D /* UnitTest */,
 				B0C0C6F52A3BFDAF00EAD00D /* Products */,
 				B0C0C7A62A3C0CD200EAD00D /* Frameworks */,
@@ -123,11 +141,10 @@
 		B0C0C7152A3BFDFF00EAD00D /* Attractions */ = {
 			isa = PBXGroup;
 			children = (
-				B0C0C7162A3BFDFF00EAD00D /* AttractionsViewController.swift */,
 				B0C0C7172A3BFDFF00EAD00D /* AttractionsViewModelProtocol.swift */,
 				B0C0C7182A3BFDFF00EAD00D /* AttractionsViewModel.swift */,
+				B0C0C7162A3BFDFF00EAD00D /* AttractionsViewController.swift */,
 				B0C0C7192A3BFDFF00EAD00D /* AttractionsViewController+Routes.swift */,
-				B0C0C71A2A3BFDFF00EAD00D /* AttractionRouter.swift */,
 				B0C0C71B2A3BFDFF00EAD00D /* UIComponents */,
 			);
 			path = Attractions;
@@ -308,15 +325,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0C0C7262A3BFDFF00EAD00D /* AttractionRouter.swift in Sources */,
 				B0C0C7222A3BFDFF00EAD00D /* AttractionsViewController.swift in Sources */,
 				B0C0C7252A3BFDFF00EAD00D /* AttractionsViewController+Routes.swift in Sources */,
 				B0C0C7282A3BFDFF00EAD00D /* RootViewController.swift in Sources */,
+				B094D9B52A3C436600B844F4 /* AttractionDetailViewController+Routes.swift in Sources */,
 				B0C0C72B2A3BFDFF00EAD00D /* RootViewModelProtocol.swift in Sources */,
 				B0C0C7232A3BFDFF00EAD00D /* AttractionsViewModelProtocol.swift in Sources */,
+				B094D9B12A3C434300B844F4 /* AttractionDetailViewModel.swift in Sources */,
+				B094D9B32A3C434A00B844F4 /* AttractionDetailViewController.swift in Sources */,
 				B0C0C7272A3BFDFF00EAD00D /* AttractionCell.swift in Sources */,
 				B0C0C72A2A3BFDFF00EAD00D /* RootViewController+Routes.swift in Sources */,
 				B0C0C7292A3BFDFF00EAD00D /* RootViewModel.swift in Sources */,
+				B094D9AF2A3C432500B844F4 /* AttractionDetailViewModelProtocol.swift in Sources */,
 				B0C0C7242A3BFDFF00EAD00D /* AttractionsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

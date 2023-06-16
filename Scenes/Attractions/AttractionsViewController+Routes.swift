@@ -5,11 +5,11 @@
 //  Created by Roy on 2023/2/16.
 //
 
-import UIKit
-
+import Foundation
+import Domain
 
 extension AttractionsViewController {
     public enum Routes {
-        case showAttraction(id: Int)
+        case showAttraction(_ attraction: Attraction)
     }
 }
