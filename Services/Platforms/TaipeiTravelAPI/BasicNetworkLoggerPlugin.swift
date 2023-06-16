@@ -37,10 +37,8 @@ public final class BasicNetworkLoggerPlugin: PluginType {
 
     public func willSend(_ request: RequestType, target: TargetType) {
         var cURLString: String?
-        if let request = request as? Request, cURL {
+        if cURL {
             cURLString = request.getCurlRepresentation()
-            //output(separator, terminator, request.debugDescription)
-            //return
         }
         outputItems(logNetworkRequest(request.request as URLRequest?, cURL: cURLString))
     }
@@ -127,7 +125,7 @@ fileprivate extension BasicNetworkLoggerPlugin {
     }
 }
 
-fileprivate extension Request {
+fileprivate extension RequestType {
     func getCurlRepresentation() -> String {
         var components = ["$ curl -v"]
 

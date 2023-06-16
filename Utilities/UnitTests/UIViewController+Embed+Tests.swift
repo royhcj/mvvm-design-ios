@@ -26,7 +26,7 @@ final class UIViewController·Embed·Tests: XCTestCase {
         // When
         parent.embed(child)
         
-        // Check
+        // Then
         XCTAssert(child.view.superview == parent.view, "Child's superview should be parent's view.")
         XCTAssert(child.parent == parent, "Child should have parent.")
         XCTAssert(child.hasCalledDidMoveToParent, "Child should move to parent.")
@@ -44,7 +44,7 @@ final class UIViewController·Embed·Tests: XCTestCase {
         // When
         parent.embed(child, over: parentSubview)
         
-        // Check
+        // Then
         XCTAssert(child.view.superview == parentSubview, "Child's superview should be specified view.")
         XCTAssert(child.parent == parent, "Child should have parent.")
         XCTAssert(child.hasCalledDidMoveToParent, "Child should move to parent.")
@@ -60,7 +60,7 @@ final class UIViewController·Embed·Tests: XCTestCase {
         // When
         child.unembedFromParent()
         
-        // Check
+        // Then
         XCTAssert(child.view.superview == nil, "Child's view should not have superview.")
         XCTAssert(child.parent == nil, "Child should not have parent.")
         XCTAssert(child.hasCalledDidMoveToParent, "didMoveToParent should be called.")

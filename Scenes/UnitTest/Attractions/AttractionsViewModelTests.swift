@@ -5,7 +5,7 @@
 //  Created by Roy on 2023/2/17.
 //
 
-@testable import CleanArcDesign
+//@testable import MvvmDesign
 import XCTest
 import RxSwift
 import RxCocoa
@@ -55,7 +55,7 @@ final class AttractionsViewModelTests: XCTestCase {
         
         sut.fetchMoreAttractions(startsOver: true)
         
-        // Check
+        // Then
         wait(for: [expectation], timeout: 1)
     }
     
@@ -86,7 +86,7 @@ final class AttractionsViewModelTests: XCTestCase {
         
         sut.fetchMoreAttractions(startsOver: true)
         
-        // Check
+        // Then
         wait(for: [expectationBusy, expectationNotBusy], timeout: 10)
     }
     
@@ -117,7 +117,7 @@ final class AttractionsViewModelTests: XCTestCase {
         
         sut.fetchMoreAttractions(startsOver: true)
         
-        // Check
+        // Then
         wait(for: [expectationBusy, expectationNotBusy], timeout: 10)
     }
 }

@@ -19,6 +19,8 @@
 		B0C0C6E42A3BFB5200EAD00D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = B0C0C6E32A3BFB5200EAD00D /* RxCocoa */; };
 		B0C0C6E62A3BFB5200EAD00D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B0C0C6E52A3BFB5200EAD00D /* RxSwift */; };
 		B0C0C6E92A3BFB8D00EAD00D /* IORequestable in Frameworks */ = {isa = PBXBuildFile; productRef = B0C0C6E82A3BFB8D00EAD00D /* IORequestable */; };
+		B0C0C7C32A3C2CA400EAD00D /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C0C7B12A3C0D4400EAD00D /* Domain.framework */; };
+		B0C0C7C62A3C2CA500EAD00D /* Utilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0C0C7B32A3C0D4400EAD00D /* Utilities.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +44,8 @@
 		B0C0C6D12A3BFB0600EAD00D /* TaipeiTravelAPI+Bridging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaipeiTravelAPI+Bridging.swift"; sourceTree = "<group>"; };
 		B0C0C6D42A3BFB0600EAD00D /* TaipeiTravelAttractionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaipeiTravelAttractionService.swift; sourceTree = "<group>"; };
 		B0C0C6E02A3BFB2600EAD00D /* ServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTests.swift; sourceTree = "<group>"; };
-		B0C0C7652A3C014700EAD00D /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0C0C7672A3C017300EAD00D /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C0C7B12A3C0D4400EAD00D /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C0C7B32A3C0D4400EAD00D /* Utilities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C0C7C62A3C2CA500EAD00D /* Utilities.framework in Frameworks */,
+				B0C0C7C32A3C2CA400EAD00D /* Domain.framework in Frameworks */,
 				B0C0C6E92A3BFB8D00EAD00D /* IORequestable in Frameworks */,
 				B0C0C6E62A3BFB5200EAD00D /* RxSwift in Frameworks */,
 				B0C0C6E42A3BFB5200EAD00D /* RxCocoa in Frameworks */,
@@ -76,7 +80,7 @@
 				B0C0C6CA2A3BFB0600EAD00D /* Platforms */,
 				B0C0C6DF2A3BFB2600EAD00D /* UnitTests */,
 				B0C0C6AA2A3BFA9800EAD00D /* Products */,
-				B0C0C7642A3C014700EAD00D /* Frameworks */,
+				B0C0C7B02A3C0D4400EAD00D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,11 +137,11 @@
 			path = UnitTests;
 			sourceTree = "<group>";
 		};
-		B0C0C7642A3C014700EAD00D /* Frameworks */ = {
+		B0C0C7B02A3C0D4400EAD00D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B0C0C7672A3C017300EAD00D /* Utilities.framework */,
-				B0C0C7652A3C014700EAD00D /* Utilities.framework */,
+				B0C0C7B12A3C0D4400EAD00D /* Domain.framework */,
+				B0C0C7B32A3C0D4400EAD00D /* Utilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

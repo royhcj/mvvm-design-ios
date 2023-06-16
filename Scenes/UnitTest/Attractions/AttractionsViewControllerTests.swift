@@ -34,7 +34,7 @@ final class AttractionsViewControllerTests: XCTestCase {
     }
 
     func test·AttractionsVC一when·initialized一should·have·title() throws {
-        // Check
+        // Then
         XCTAssert(sut.title == "Attractions")
     }
     
@@ -42,7 +42,7 @@ final class AttractionsViewControllerTests: XCTestCase {
         // Given
         let attractions = AttractionServiceMock.mockAttractions
         
-        // Check
+        // Then
         let expectation = XCTestExpectation(description: "Should call reloadData")
         sut.tableView.rx.methodInvoked(#selector(UITableView.reloadData))
             .subscribe(onNext: { _ in
@@ -59,7 +59,7 @@ final class AttractionsViewControllerTests: XCTestCase {
         // Given
         let attractions = AttractionServiceMock.mockAttractions
         
-        // Check
+        // Then
         let expectation = XCTestExpectation(description: "Should have good cells")
         sut.tableView.rx.methodInvoked(#selector(UITableView.reloadData))
             .delay(.milliseconds(0), scheduler: MainScheduler.asyncInstance)

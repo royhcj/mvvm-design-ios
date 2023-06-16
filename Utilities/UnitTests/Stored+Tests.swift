@@ -29,7 +29,7 @@ final class Stored·Tests: XCTestCase {
             // When
             sutInt = value
             
-            // Check
+            // Then
             XCTAssert(sutInt == value, "Should have same value as the one assigned")
         }
     }
@@ -39,7 +39,7 @@ final class Stored·Tests: XCTestCase {
         let values: [Int] = [0, 1, 3, 500]
         var iterator = values.makeIterator()
         
-        // Check
+        // Then
         $sutInt.skip(1)
             .subscribe(onNext: { value in
                 XCTAssert(value == iterator.next()!, "Should observe the same value as assigned")
