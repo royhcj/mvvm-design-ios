@@ -22,6 +22,8 @@ public class TaipeiTravelAttractionService: AttractionService {
                 case .success(let responseBody):
                     let attractions = responseBody.data.map {
                         Attraction(data: $0)
+                    }.filter {
+                        !$0.images.isEmpty
                     }
                     completion(.success(attractions))
                 case .failure(let error):

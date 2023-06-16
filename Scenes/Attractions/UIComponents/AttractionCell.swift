@@ -32,33 +32,74 @@ public class AttractionCell: UITableViewCell {
     private func createLayout() {
         contentView.backgroundColor = .white
         
+        let containerView: UIView = {
+            let container = UIView()
+            container.backgroundColor = .init(red: 0.99, green: 0.92, blue: 0.75, alpha: 1)
+            container.layer.cornerRadius = 10
+            container.layer.shadowRadius = 5
+            container.layer.shadowColor = UIColor.black.cgColor
+            container.layer.shadowOpacity = 0.3
+            container.layer.masksToBounds = false
+            contentView.addSubview(container)
+            container.snp.makeConstraints {
+                $0.edges.equalToSuperview().inset(12)
+            }
+            return container
+        }()
+        
         let vstack = UIStackView()
         vstack.axis = .vertical
         vstack.distribution = .equalSpacing
-        contentView.addSubview(vstack)
+        containerView.addSubview(vstack)
         vstack.snp.makeConstraints {
-            $0.edges.equalToSuperview().inset(18)
+            $0.edges.equalToSuperview().inset(15)
         }
         
         photoImageView = UIImageView()
         photoImageView.contentMode = .scaleAspectFill
         photoImageView.clipsToBounds = true
+        photoImageView.layer.cornerRadius = 10
         photoImageView.snp.makeConstraints {
             $0.height.equalTo(photoImageView.snp.width)
         }
         vstack.addArrangedSubview(photoImageView)
         
+        vstack.addArrangedSubview({
+            let spacing = UIView()
+            spacing.snp.makeConstraints {
+                $0.height.equalTo(15)
+            }
+            return spacing
+        }())
+        
         titleLabel = UILabel()
         titleLabel.font = UIFont.systemFont(ofSize: 18)
+        titleLabel.textColor = .systemBlue
         vstack.addArrangedSubview(titleLabel)
         
         vstack.addArrangedSubview({
+            let spacing = UIView()
+            spacing.snp.makeConstraints {
+                $0.height.equalTo(15)
+            }
+            return spacing
+        }())
+        
+        vstack.addArrangedSubview({
             let divider = UIView()
-            divider.backgroundColor = .gray
+            divider.backgroundColor = .systemBlue
             divider.snp.makeConstraints {
                 $0.height.equalTo(1)
             }
             return divider
+        }())
+        
+        vstack.addArrangedSubview({
+            let spacing = UIView()
+            spacing.snp.makeConstraints {
+                $0.height.equalTo(15)
+            }
+            return spacing
         }())
         
         introductionLabel = UILabel()

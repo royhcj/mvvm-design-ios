@@ -113,10 +113,7 @@ public struct UIDisplayContext {
             
             viewController.unembedFromParent()
 
-//            viewController.removeFromParent()
-//            viewController.view.removeFromSuperview()
-//            viewController.didMove(toParent: nil)
-//        case .appendToTabBarController(let source):
+//        case .appendToTabBarController(let source): // TODO: later
 //            guard let source = source as? UITabBarController else { break }
 //            var viewControllers = source.viewControllers ?? []
 //            if let index = viewControllers.firstIndex(of: source) {

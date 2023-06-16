@@ -72,7 +72,7 @@ public class AttractionsViewController: MvvmViewController<AttractionsViewModelP
         tableView.rx.modelSelected(Attraction.self)
             .subscribe(onNext: { [weak self] attraction in
                 guard let self = self else { return }
-                self.router(self, .showAttraction(id: attraction.id))
+                self.router(self, .showAttraction(attraction))
             }).disposed(by: bag)
     }
 }
